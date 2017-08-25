@@ -1,0 +1,1730 @@
+Name = "MD Souls"
+Version = 0.0.15
+Author = "Ryuuro"
+Description = "Makes the game more difficult, use with caution!\n\n"\
+              "<red>WARNING: Your computer and you may not be able to handle this difficult!</red>"
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//	It's a work in progress mod (WIP) don't think is balanced right now, need a lot of test
+//	and make some balance things. Just enjoy the mod and take care with pirates! Arrr!
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//										 SPECIAL THANKS TO:
+//
+//				-JohnStar145- (Tester)
+//				-Skufl- (Tester)
+//
+//				-Skynet- (Helper)
+//				-lVlemories- (Helper)
+//				-Bubbet- (Helper)
+//
+//				-yoloberlin- (Forum helper)								
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//	V 0.0.1
+//			- Start of the mod
+//			- Changed the Money and fuel at start.
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//	V 0.0.2
+//			- Added AI Changes to be more aggresive.
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// 	V 0.0.3
+//			- Increased spawn and difficulty ships each map.
+//			- Increased the reaction time of the ships and decreased distance between ships.
+//			- Decreased the money you get each kill.
+//			- Decreased the FTL fuel you get each kill.
+//			- Changed AI to BountyBrainHardest (CustomAI)
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//	V 0.0.4
+//			- Increased Galaxy to more big
+//			- Increased Red, Yellow and blue nebulas to has more space for future things 
+//			- Increased number of solar systems to 100
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//	V 0.0.5
+//			- Weapon Changes
+//				- Decreased the ammo factory rate to 1 each second
+//				- Ammo factory increased cost, decreased health points and decreased AI to attack it
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.6
+//			- Weapon Changes
+//				- All armor blocks increased Cost, decreased Health, decreased penetration resistance, flammable, density decreased, AoeDMG block decreased
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.7
+//			- Big Cannon Bullet Changes
+//				- Big Cannon Bullet = Decreased Range, Ideal Range and Speed of the bullet
+//				- Big Cannon Bullet = Decreased Penetration and penetration speed
+//				- Big Cannon Bullet = Decreased damage to shields
+//				- Big Cannon Bullet = Decreased damage to armor
+//				- Big Cannon Bullet = Decreased damage on penetration
+//				- Big Cannon Bullet = Decreased damage on Operational rooms
+//				- Big Cannon Bullet = Decreased fire chance
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.8
+//|FIX|	- Increased the money and FTL each kill from 0.9 to 0.10 (Skufl test)
+//			- Big Thruster Changes
+//				- Big Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force, Increased Fuel Usage
+//				- Big Thruster = Increased Minimal Power on the UI and increased the Ideal Power on the UI
+//				- Big Thruster = Increased Minimal Crew on the UI and increased the Ideal Crew on the UI
+//				- Big Thruster = Decreased the max ammo (battery)
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.9
+//			- Big Cannon Changes
+//				- Big Cannon = Increased Cost, Decreased Health, Decreased Penetration Resistance, Increased focus of the AI
+//				- Big Cannon = Increased the cost to shoot
+//				- Big Cannon = Decreased the max ammo they had on the storage, increased the prerequiste to shoot and increased the to find more ammo
+//				- Big Cannon Turret = Decreased the rotation speed, Fire speed and Rotate speed. Increased the AmmoUsed and firing Arc
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//	V 0.0.10
+//			- Bunk, Cockpit, Conveyor Belts, Corridor, Doors Changes
+//				- Bunk = Increased Cost, Decreased Health, Decreased Penetration Resistance
+//				- Bunk = Increased the crew idling for more time before needed	
+//				- Cockpit = Increased Cost, Decreased Health, Increased the Selection Priority and Decreased the Penetration Resistance
+//				- Cockpit = Decreased the Sight Radius
+//				- Cockpit = Decreased the max ammo
+//				- Cockpit = Decreased the max ammo and priority of ressuply
+//				- Cockpit = Increased the quantity of ammo will need to run and the time for need to resuply
+//				- Cockpit = The Crew leaves the room while on fire mode is active
+//				- Conveyor belts = Increased Cost, Decreased Health and Decreased Penetration Resistance
+//				- Conveyor belts = Decreased the speed on every side where the crew walks
+//				- Conveyor belts = Decreased the speed on every side where the crew walks while congested
+//				- Conveyor belts = Decreased the speed on every side where the crew walks while on fire
+//				- Corridor = Increased Cost, Decreased Health, Decreased Penetration Resistance and decreased Crew Speed
+//				- Doors = Increased Cost, Decreased the sell value
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+//	V 0.0.11
+//			- Electro Bolt Shot, Electro Bolt, Fire Extinguiser, FTL Drive, Ion Beam, Medium Bullet, Medium Cannon, Medium Thruster Changes
+//				- Electro Bolt Shot = Decreased Range, Decreased Ideal Range and Decreased traveling speed
+//				- Electro Bolt Shot = Decreased Energy drained
+//				- Electro Bolt Shot = Decreased damage to parts
+//				- Electro Bolt Shot = Decreased damage to structural
+//				- Electro Bolt = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+//				- Electro Bolt = Decreased Max Ammo
+//				- Electro Bolt = Decreased Fire Speed, Increased Firing Arc and Increased Ammo per shot
+//				- Fire Extinguiser = Increased Cost, Decreased Health and Decreased Penetration Resistance
+//				- Fire Extinguiser = Decreased Ammo
+//				- Fire Extinguiser = Increased time to produce extinguisher
+//				- FTL Drive = Increased Cost, Increased Selection priority, Decreased Health and Decreased Penetration Resistance
+//				- FTL Drive = Increased the energy needed to jump
+//				- FTL Drive = Decreased Fuel Capacity
+//				- Ion Beam = Increased Cost, Decreased Health, Increased AI Value, Decreased Penetration Resistance
+//				- Ion Beam = Decreased Max Ammo
+//				- Ion Beam = Decreased Fire Speed, Increased Fire Delay, Increased Ammo Used, Increased Min Ammo Used
+//				- Ion Beam = Decreased Range, Decreased Ideal Range, Decreased the Duration, Decreased Hit Interval
+//				- Ion Beam = Decreased Damage to Shields
+//				- Ion Beam = Decreased Damage to Parts
+//				- Ion Beam = Decreased Damage to Structural
+//				- Medium Bullet = Decreased Range, Decreased Ideal Range and Decreased Speed
+//				- Medium Bullet = Decreased Penetration and Decreased
+//				- Medium Bullet = Decreased Damage to Shields
+//				- Medium Bullet = Decreased Damage to Parts
+//				- Medium Bullet = Decreased Damage Penetrating Parts
+//				- Medium Cannon = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI value
+//				- Medium Cannon = Increased Delay on shot-to-shot
+//				- Medium Cannon = Decreased the Max Ammo
+//				- Medium Cannon = Decreased Fire Speed, Increased Firing Arc, Decreased Rotate Speed
+//				- Medium Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force and Increased Fuel Usage
+//				- Medium Thruster = Increased Minimal Crew on the UI and increased the Ideal Crew on the UI
+//				- Medium Thruster = Increased Minimal Power on the UI and increased the Ideal Power on the UI
+//				- Medium Thruster = Decreased the max ammo (battery)
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.12
+//|FIX|	- Ammo Factory = Increased time to make ammo from 0.75 to 1
+//|FIX|	- Ammo Factory = Reduced the speed of .wav to syncronise to the process of ammo maker
+//			- Missile Factory Changes
+//				- Missile Factory = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI value
+//				- Missile Factory = Decreased Max Ammo (Missile Parts)
+//				- Missile Factory = Decreased Max Ammo (Battery)
+//				- Missile Factory = Reduced the process to make ammo
+//				- Missile Factory = Reduced the speed of .wav to syncronise to the process of ammo maker
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.13
+//			- Galaxy Changes
+//				- Galaxy = Increased the galaxy map on radious
+//				- Galaxy Gold Nebula = Increased the range of Gold Nebula
+//				- Galaxy Blue Nebula = Increased the range of Blue Nebula
+//				- Galaxy Red Nebula = Increased the range of Red Nebula
+//				- Galaxy Star = Increase the Amount of Stars
+//				- Galaxy Star = Increases the InnerPlanet and randomize them
+//				- Galaxy InnerPlanet = Increases the Moons and randomize them
+//				- Galaxy InnerPlanet = Increases the Nodes and randomize them
+//				- Galaxy OuterPlanet = Increases the Moons and randomize them
+//				- Galaxy OuterPlanet = Increases the Nodes and randomize them
+//				- Galaxy Camera = Increases the Camera zoom
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.14
+//|FIX|	- Fixed the .zip file
+//			- Tier difficulty Changes
+//				- Increased the number of ships on each map to 16
+//				- Increased Maximum distance where the ships will spawn on the map
+//			- |COMUNITY SHIPS ADDED!| - 
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+// V 0.0.15
+//|FIX|	- Increased the money at start from 15.000 to 20.000 (JohnStar145 Test)
+//|FIX|	- Increased the money you get after kill from 0.10 to 0.105 
+//|FIX|	- Increased the FTL you get after kill from 0.10 to 0.105 
+//|FIX|	- Fixed the Multi-Link Downloads and increased to Mega.nz / Dropbox / Mediafire
+//			- Missile, Missile Launcher, Missile Storage, Point Deffense, Power Storage, Quarters, Reactor, Sensor, Shield Generator, Small Laser Shot, Small Laser, Small Thruster, Structure
+//				- Missile = Decreased Range, Decreased Ideal Range and Decreased Speed
+//				- Missile = Decreased Turn Speed(Aiming) and Turn speed (How much time takes the Missile to rotate 360 degrees)
+//				- Missile = Decreased Acceleration
+//				- Missile = Decreased Life time of the Missile after launched
+//				- Missile = Decreased Health of the Missile for point deffense
+//				- Missile = Decreased Damage to shield
+//				- Missile = Decreased Damage to Operational and Structural. Decreased Radius to Operational and Structural
+//				- Missile Launcher = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+//				- Missile Storage = Increased Cost, Decreased Max Health, Decreased Penetration Resistance and Increased AI Value
+//				- Point Defense Shot = Decreased Range, Decreased Ideal Range and Decreased Speed
+//				- Point Defense Shot = Decreased Damage to missiles
+//				- Pont Defense = Decreased Fire Interval, Increased Fire Delay, Increased Firing Arc, Decreased Rotate Speed and Increased Ammo Used (Battery)
+//				- Power Storage = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+//				- Power Storage = Decreased Max Ammo (Battery)
+//				- Quarters = Increased Cost, Decreased Health and Decreased Penetration Resistance
+//				- Reactor = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+//				- Reactor = Increased the time each battery is produced
+//				- Sensor = Increased Cost, Decreased Health and Decreased Penetration Resistance
+//				- Sensor = Decreased Max Ammo (Battery)
+//				- Sensor = Increased Interval on how consumes Ammo (Battery)
+//				- Sensor = Decreased Range of the Sensor
+//				- Shield Generator = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+//				- Shield Generator = Decreased Max Ammo (Battery)
+//				- Shield Generator = Increased the Power Drain (Quantity)
+//				- Small Laser Shot = Decreased Range, Decreased Ideal Range and Decreased Speed
+//				- Small Laser Shot = Decreased Damage to Shields
+//				- Small Laser Shot = Decreased Damage to Operational Rooms
+//				- Small Laser Shot = Decreased Damage to Structural
+//				- Small Laser = Increased Cost, Decreased Health, Decreased Penetration Resistance, Increased AI Value
+//				- Small Laser = Decreased Max Ammo
+//				- Small Laser = Decreased Fire Interval, Increased Fire Delay, Increased Firing Arc, Decreased Rotate Speed and Increased Ammo Used (Battery)
+//				- Small Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force and Increased Fuel Ussage (Battery)
+//				- Small Thruster = Decreased Max Ammo (Battery)
+//				- Structure = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+//				- Structure Wedge = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+//				- Structure Wedge L= Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+//				- Structure Wedge R = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+//				- Wall Hole = Increased Cost and Can Be Buildable
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+//Ships from the comunity
+StringsFolder = "Strings"
+ShipLibraries
+[
+	{
+		Folder = "Ships";
+		NameKey = "CommunityShipsLibrary";
+	}
+]
+
+Actions
+[
+//Ships From The Comunity
+
+	{//Ships From the comunity
+		Action = AddMany;
+		AddTo = "<Bounty Mode/bounty mode.txt>/Bounties"
+		ManyToAdd = &<ComunityShips.txt>/BountyShips
+	}
+
+//Starting money and Fuel
+
+	{//Money and Fuel = Decreased both at start
+		Action = Overrides
+		OverrideIn = "<Bounty Mode/bounty mode.txt>"
+		Overrides
+		{
+			StartingMoney = 20000
+			StartingFuel = 0
+		}
+	}
+
+//AI Changes
+
+	{//AI = Changed to be more aggresive
+		Action = Overrides
+		OverrideIn = "<Ships/ai.txt>/BountyBrainHard"
+		Overrides
+		{
+			UpdateInterval = .15
+			TargetAbandonRangeBeyondSight = 55
+			TargetSwitchThresholdFactor = 2
+			TargetDistanceFactorExponent = 0.15
+
+			PartTargetChecksPerUpdate = 15
+			PartTargetSwitchThresholdFactor = 1
+			PartTargetValueFactorPerPenetrationDist = .85
+
+			AttackAngleChangeChance = .15
+			AttackAngleChangeDelta = [-45d, 45d]
+
+			PatrolRadius = 1500
+			PatrolDestinationChangeChance = .0225
+		}
+	}	
+	
+//Bounty Mode Changes
+
+	{//Minimum distance where they will spawn on the map
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/BaseThreatLevel/MinBountySpawnDistanceFromPlayer"
+		With = 50	
+	}
+	
+	{//Maximum distance where they will spawn on the map
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/BaseThreatLevel/MaxBountySpawnDistanceFromPlayer"
+		With = 4000
+	}
+
+	{//Minimum distance between ships
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/BaseThreatLevel/MinDistanceBetweenBounties"
+		With = 250	
+	}
+
+	{//Reaction time
+		Action = Replace
+		Replace = "<Ships/ai.txt>/BountyBrainHard/UpdateInterval"
+		With = .15		
+	}
+	
+	{//Money will give to you the ships
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/BaseThreatLevel/RewardMoneyAsFractionOfShipValue"
+		With = .105
+	}
+	
+	{//Fuel will give to you the ships
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/BaseThreatLevel/RewardFuelAsFractionOfShipMass"
+		With = .105
+	}
+	
+	{//How much ships has the map and which tier (Amateur)
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/ThreatLevels/0/TiersToSpawn"
+		With = [2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4]
+	}
+	
+	{//How much ships has the map and which tier on the starter map (Amateur)
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/ThreatLevels/0/TiersToSpawnIfStartingNode"
+		With = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3]
+	}
+	
+	{//IA of the ships
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/ThreatLevels/0/BountyShipAI"
+		With = "BountyBrainHard"
+	}
+	
+	{//How much ships has the map and which tier (Professional)
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/ThreatLevels/1/TiersToSpawn"
+		With = [3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5]
+	}
+
+	{//How much ships has the map and which tier (Veteran)
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/ThreatLevels/2/TiersToSpawn"
+		With = [4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6]
+	}
+	
+	{//How much ships has the map and which tier (Elite)
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/ThreatLevels/3/TiersToSpawn"
+		With = [6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8]
+	}
+	
+	{//How much ships has the map and which tier (Vanguard)
+		Action = Replace
+		Replace = "<Bounty Mode/bounty mode.txt>/ThreatLevels/4/TiersToSpawn"
+		With = [8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9]
+	}
+		
+//Galaxy Changes	
+	
+	{//Galaxy = Increased the galaxy map on radious
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>"
+		Overrides
+		{
+			HexRadius = 800
+		}
+	}
+
+	{//Galaxy Gold Nebula = Increased the range of Gold Nebula
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/Spawners/0"
+		Overrides
+		{
+			NoiseFalloffRange = [280, 300]
+			GridSize = [30, 30]
+		}
+	}
+
+	{//Galaxy Blue Nebula = Increased the range of Blue Nebula
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/Spawners/1"
+		Overrides
+		{
+			NoiseFalloffRange = [280, 300]
+			GridSize = [30, 30]
+		}
+	}
+
+	{//Galaxy Red Nebula = Increased the range of Red Nebula
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/Spawners/2"
+		Overrides
+		{
+			NoiseFalloffRange = [280, 300]
+			GridSize = [30, 30]
+		}
+	}
+
+	{//Galaxy Star = Increase the Amount of Stars
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/Spawners/5"
+		Overrides
+		{
+			Count = 300
+			Distance = [20, 295]
+		}
+	}
+
+	{//Galaxy Star = Randomize more the size of the Star on every system
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/Star"
+		Overrides
+		{
+			Size = [1, 3.5]
+		}
+	}
+	
+	{//Galaxy Star = Increases the InnerPlanet and randomize them
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/Star/SubSpawners/0"
+		Overrides
+		{
+			Count = [0, 10]
+		}
+	}
+	
+	{//Galaxy Star = Increases the OuterPlanet and randomize them
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/Star/SubSpawners/1"
+		Overrides
+		{
+			Count = [0, 10]
+		}
+	}
+
+	{//Galaxy InnerPlanet = Increases the Moons and randomize them
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/InnerPlanet/SubSpawners/0"
+		Overrides
+		{
+			Count = [0, 3]
+		}
+	}
+
+	{//Galaxy InnerPlanet = Increases the Nodes and randomize them
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/InnerPlanet/SubSpawners/1"
+		Overrides
+		{
+			Count = [0, 3]
+		}
+	}
+
+	{//Galaxy OuterPlanet = Increases the Moons and randomize them
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/OuterPlanet/SubSpawners/0"
+		Overrides
+		{
+			Count = [0, 3]
+		}
+	}
+	
+	{//Galaxy OuterPlanet = Increases the Nodes and randomize them
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/Map Generators/simple galaxy.txt>/OuterPlanet/SubSpawners/1"
+		Overrides
+		{
+			Count = [0, 1]
+		}
+	}
+	
+	{//Galaxy Camera = Increases the Camera zoom
+		Action = Overrides
+		OverrideIn = "<Galaxy Map/galaxy map.txt>/Camera"
+		Overrides
+		{
+			DefaultScale = 1
+			MinScale = .25
+			MaxScale = 35
+		}
+	}
+	
+//Modules Changes
+
+//Ammo Factory
+
+	{//Ammo Factory = Increased Cost, decreased AI to attack them and decreased health points.
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ammo_factory/ammo_factory.txt>/Part"
+		Overrides
+		{
+			Cost = 5500
+			AIValue = 15
+			Health = 3500
+		}
+	}
+	
+	{//Ammo Factory = Reduced the process to make ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ammo_factory/ammo_factory.txt>/Part/Components/AmmoConverter"
+		Overrides
+		{
+			Interval = 1
+		}
+	}
+
+	{//Ammo Factory = Reduced the speed of .wav to syncronise to the process of ammo maker
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ammo_factory/ammo_factory.txt>/Part/Components/AmmoConverter/ConvertAmmoMediaEffects/0"
+		Overrides
+		{
+			SpeedVariation = .2
+		}
+	}
+	
+//Armor Blocks
+
+	{//Basic Armor = Increased Cost, Decreased Health, Decreased Penetration Resistance, Flammable, Density decreased, AoeDMG block decreased
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/armor/armor.txt>/Part"
+		Overrides
+		{
+			Cost = 400
+			MaxHealth = 3000
+			PenetrationResistance = 80
+			Flammable = true
+			Density = 2
+			AreaDamageBlockFactor = .15
+		}
+	}
+	
+	{//Triangle Armor 1x1 = Increased cost, Decreased Health, Decreased Penetration Resistance, Flammable, Density decreased, AoeDMG block decreased
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/armor_tri/armor_tri.txt>/Part"
+		Overrides
+		{
+			Cost = 125
+			MaxHealth = 750
+			PenetrationResistance = 80
+			Flammable = true
+			Density = 2
+			AreaDamageBlockFactor = .55
+		}
+	}
+	
+	{//Wedge Armor 1x1 = Increased Cost, Decreased Health, Decreased the Penetration Resistance, Flammable, Density decreased, AoeDMG block decreased
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/armor_wedge/armor_wedge.txt>/Part"
+		Overrides
+		{
+			Cost = 200
+			MaxHealth = 1500
+			PenetrationResistance = 80
+			Flammable = true
+			Density = 2
+			AreaDamageBlockFactor = .15
+		}
+	}
+
+	{//Double Armor = Increased Cost, Decreased Health, Decreased Penetration Resistance, Flammable, Density decreased, AoeDMG block decreased
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/armor2/armor2.txt>/Part"
+		Overrides
+		{
+			Cost = 750
+			MaxHealth = 6000
+			PenetrationResistance = 80
+			Flammable = true
+			Density = 2
+			AreaDamageBlockFactor = .15		
+		}
+	}
+	
+	{//Double Armor Wedge L = Increased Cost, Decreased Health, Decreased Penetration Resistance, Flammable, Density decreased, AoeDMG block decreased
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/armor2_wedge/armor2_wedge_L.txt>/Part"
+		Overrides
+		{
+			Cost = 400
+			MaxHealth = 3250
+			PenetrationResistance = 80
+			Flammable = true
+			Density = 2
+			AreaDamageBlockFactor = .15		
+		}
+		
+	}
+	
+	{//Double Armor Wedge R = Increased Cost, Decreased Health, Decreased Penetration Resistance, Flammable, Density decreased, AoeDMG block decreased
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/armor2_wedge/armor2_wedge_r.txt>/Part"
+		Overrides
+		{
+			Cost = 400
+			MaxHealth = 3250
+			PenetrationResistance = 80
+			Flammable = true
+			Density = 2
+			AreaDamageBlockFactor = .15		
+		}
+		
+	}
+	
+//Big Cannon Bullet
+
+	{//Big Cannon Bullet = Decreased Range, Ideal Range and Speed of the bullet
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_bullet.txt>"
+		Overrides
+		{
+			Range = 125
+			IdealRange = 65
+			Speed = 25
+		}
+	}
+	
+	{//Big Cannon Bullet = Decreased Penetration and penetration speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_bullet.txt>/Components/Hit"
+		Overrides
+		{
+			Penetration = 2
+			PenetrationSpeed = 3
+		}
+	}
+	
+	{//Big Cannon Bullet = Decreased damage to shields
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_bullet.txt>/Components/Hit/HitShield/HitEffects/0"
+		Overrides
+		{
+			Damage = 2000
+		}
+	}
+	
+	{//Big Cannon Bullet = Decreased damage to armor
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_bullet.txt>/Components/Hit/HitOperational/HitEffects/0"
+		Overrides
+		{
+			Damage = 2000
+		}
+	}
+	
+	{//Big Cannon Bullet = Decreased damage on penetration
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_bullet.txt>/Components/Hit/HitStructural/HitEffects/0"
+		Overrides
+		{
+			Damage = 1300
+		}
+	}
+	
+	{//Big Cannon Bullet = Decreased damage on Operational rooms
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_bullet.txt>/Components/Hit/PenetratingOperational/HitEffects/0"
+		Overrides
+		{
+			Damage = 1000
+		}
+	}
+	
+	{//Big Cannon Bullet = Decreased fire chance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_bullet.txt>/Components/Hit/PenetratingOperational/HitEffects/1"
+		Overrides
+		{
+			FireChance = .1
+		}		
+	}
+
+//Big Cannon
+
+	{//Big Cannon = Increased Cost, Decreased Health, Decreased Penetration Resistance, Increased focus of the AI
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_cannon.txt>/Part"
+		Overrides
+		{
+			Cost = 6500
+			MaxHealth = 10000
+			PenetrationResistance = 75
+			AIValue = 50
+		}
+	}
+	
+	{//Big Cannon = Increased the cost to shoot
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_cannon.txt>/Part/Components/LoadedAmmo"
+		Overrides
+		{
+			MaxAmmo = 5
+		}
+	}
+	
+	{//Big Cannon = Decreased the max ammo they had on the storage, increased the prerequiste to shoot and increased the to find more ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_cannon.txt>/Part/Components/AmmoStorage"
+		Overrides
+		{
+			MaxAmmo = 15
+			PrerequisiteMetAmmo = 5
+			PrerequisiteUnmetAmmo = 4
+		}
+	}
+	
+	{//Big Cannon Turret = Decreased the rotation speed, Fire speed and Rotate speed. Increased the AmmoUsed and firing Arc
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_cannon/big_cannon.txt>/Part/Components/Turret"
+		Overrides
+		{
+			FireInterval = 2
+			FiringArc = 130d
+			RotateSpeed = 20d
+			AmmoUsed = 5
+		}
+	}
+	
+//Big Thruster
+	
+	{//Big Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force, Increased Fuel Usage
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_thruster/big_thruster.txt>/Part"
+		Overrides
+		{
+			Cost = 4500
+			MaxHealth = 3500
+			PenetrationResistance = 0.5
+			ThrusterForce = 400
+			FuelUsage = 300
+		}
+	}
+	
+	{//Big Thruster = Increased Minimal Power on the UI and increased the Ideal Power on the UI
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_thruster/big_thruster.txt>/Part/PowerUIStats"
+		Overrides
+		{
+			Min = .0888
+			Ideal = .1555
+		}	
+	}
+	
+	{//Big Thruster = Increased Minimal Crew on the UI and increased the Ideal Crew on the UI
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_thruster/big_thruster.txt>/Part/CrewUIStats"
+		Overrides
+		{
+			Min = .30
+			Ideal = .55
+		}
+	}
+	
+	{//Big Thruster = Decreased the max ammo (battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/big_thruster/big_thruster.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 2500
+		}
+	}
+
+//Bunk
+
+	{//Bunk = Increased Cost, Decreased Health, Decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/bunk/bunk.txt>/Part"
+		Overrides
+		{
+			Cost = 300
+			MaxHealth = 1750
+			PenetrationResistance = 0.75
+		}
+	}
+
+	{//Bunk = Increased the crew idling for more time before needed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/bunk/bunk.txt>/Part/Components/CrewIdler"
+		Overrides
+		{
+			Buffer = .35
+		}		
+	}
+
+//Cockpit	
+	
+	{//Cockpit = Increased Cost, Decreased Health, Increased the Selection Priority and Decreased the Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/cockpit/cockpit.txt>/Part"
+		Overrides
+		{
+			Cost = 12000
+			MaxHealth = 3500
+			SelectionPriority = 10
+			PenetrationResistance = 0.75
+		}				
+	}
+	
+	{//Cockpit = Decreased the Sight Radius
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/cockpit/cockpit.txt>/Part/Components/Sensor"
+		Overrides
+		{
+			SightRadius = 350
+		}			
+	}
+
+	{//Cockpit = Decreased the max ammo and priority of ressuply
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/cockpit/cockpit.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 1500
+			ResupplyThreshold = 800
+		}			
+	}
+	
+	{//Cockpit = Increased the quantity of energy will need to run and the time for need to resuply
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/cockpit/cockpit.txt>/Part/Components/PowerDrain"
+		Overrides
+		{
+			Interval = 30
+		}			
+	}
+	
+	{//Cockpit = The Crew leaves the room while on fire mode is active
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/cockpit/cockpit.txt>/Part/Components/PartCrew"
+		Overrides
+		{
+			AbandonWhenOnFire = true
+		}			
+	}
+
+//Conveyor belts
+	
+	{//Conveyor belts = Increased Cost, Decreased Health and Decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/conveyor/conveyor.txt>/Part"
+		Overrides
+		{
+			Cost = 350
+			MaxHealth = 750
+			PenetrationResistance = 0
+		}
+	}
+	
+	{//Conveyor belts = Decreased the speed on every side where the crew walks
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/conveyor/conveyor.txt>/Part/CrewSpeedFactor"
+		Overrides
+		{
+			Up = 1.30
+			Left = .20
+			Right = .20
+			Down = .20
+		}
+	}
+	
+	{//Conveyor belts = Decreased the speed on every side where the crew walks while congested
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/conveyor/conveyor.txt>/Part/CrewCongestedSpeedFactor"
+		Overrides
+		{
+			Up = .5
+			Left = .15
+			Right = .15
+			Down = .15
+		}
+	}
+	
+	{//Conveyor belts = Decreased the speed on every side where the crew walks while on fire
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/conveyor/conveyor.txt>/Part/CrewFireSpeedFactor"
+		Overrides
+		{
+			Up = .35
+			Left = .1
+			Right = .1
+			Down = .1
+		}
+	}
+
+//Corridor
+	
+	{//Corridor = Increased Cost, Decreased Health, Decreased Penetration Resistance and decreased Crew Speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/corridor/corridor.txt>/Part"
+		Overrides
+		{
+			Cost = 125
+			MaxHealth = 750
+			PenetrationResistance = 0
+			CrewSpeedFactor = 0.9
+		}
+	}
+
+//Doors	
+	
+	{//Doors = Increased Cost, Decreased the sell value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/door/door.txt>"
+		Overrides
+		{
+			Cost = 225
+			FractionalSaleRefund = 50%
+		}
+	}
+	
+//Electro Bolt Shot
+
+	{//Electro bolt shot = Decreased Range, Decreased Ideal Range and Decreased traveling speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/electro_bolt/electro_bolt_shot.txt>"
+		Overrides
+		{
+			Range = 70
+			IdealRange = 50
+			Speed = 50
+		}
+	}
+	
+	{//Electro Bolt Shot = Decreased Energy drained
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/electro_bolt/electro_bolt_shot.txt>/Components/Hit/HitOperational/HitEffects/0"
+		Overrides
+		{
+			Amount = 750
+		}
+	}
+	
+	{//Electro Bolt Shot = Decreased damage to parts
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/electro_bolt/electro_bolt_shot.txt>/Components/Hit/HitOperational/HitEffects/1"
+		Overrides
+		{
+			Damage = 0
+		}
+	}
+
+	{//Electro Bolt Shot = Decreased damage to structural
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/electro_bolt/electro_bolt_shot.txt>/Components/Hit/HitStructural/HitEffects/0"
+		Overrides
+		{
+			Damage = 0
+		}
+	}
+
+//Electro Bolt Structure
+	
+	{//Electro Bolt = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/electro_bolt/electro_bolt.txt>/Part"
+		Overrides
+		{
+			Cost = 3500
+			AIValue = 50
+			MaxHealth = 5000
+			PenetrationResistance = 75
+		}
+	}
+	
+	{//Electro Bolt = Decreased Max Ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/electro_bolt/electro_bolt.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 3000
+		}
+	}
+
+	{//Electro Bolt = Decreased Fire Speed, Increased Firing Arc and Increased Ammo per shot
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/electro_bolt/electro_bolt.txt>/Part/Components/Turret"
+		Overrides
+		{
+			FireDelay = .4
+			FiringArc = 225d
+			AmmoUsed = 300
+		}
+	}
+
+//Fire Extinguisher
+
+	{//Fire Extinguiser = Increased Cost, Decreased Health and Decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/fire_extinguisher/fire_extinguisher.txt>/Part"
+		Overrides
+		{
+			Cost = 300
+			MaxHealth = 750
+			PenetrationResistance = 0
+		}
+	}
+
+	{//Fire Extinguiser = Decreased Ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/fire_extinguisher/fire_extinguisher.txt>/Part/Components/ExtinguisherStorage"
+		Overrides
+		{
+			MaxAmmo = 85
+		}
+	}
+
+	{//Fire Extinguiser = Increased time to produce extinguisher
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/fire_extinguisher/fire_extinguisher.txt>/Part/Components/ExtinguisherProducer"
+		Overrides
+		{
+			Interval = 30
+		}
+	}
+
+//FTL Drive
+	
+	{//FTL Drive = Increased Cost, Increased Selection priority, Decreased Health and Decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ftl_drive/ftl_drive.txt>/Part"
+		Overrides
+		{
+			Cost = 12000
+			SelectionPriority = 1
+			MaxHealth = 3000
+			PenetrationResistance = 0
+		}
+	}
+	
+	{//FTL Drive = Increased the energy needed to jump
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ftl_drive/ftl_drive.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 25000
+		}		
+	}
+	
+	{//FTL Drive = Decreased Fuel Capacity
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ftl_drive/ftl_drive.txt>/Part/Components/FtlDrive"
+		Overrides
+		{
+			FuelCapacity = 80
+		}		
+	}
+	
+//Ion Beam
+
+	{//Ion Beam = Increased Cost, Decreased Health, Increased AI Value and Decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ion_beam/ion_beam.txt>/Part"
+		Overrides
+		{
+			Cost = 12000
+			AIValue = 50
+			MaxHealth = 6000
+			PenetrationResistance = 0
+		}
+	}
+
+	{//Ion Beam = Decreased Max Ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ion_beam/ion_beam.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 6000
+		}
+	}	
+
+	{//Ion Beam = Decreased Fire Speed, Increased Fire Delay, Increased Ammo Used and Increased Min Ammo Used
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ion_beam/ion_beam.txt>/Part/Components/Weapon"
+		Overrides
+		{
+			FireInterval = .3
+			FireDelay = .1
+			AmmoUsed = 300
+			MinAmmoUsed = 50
+		}
+	}
+	
+	{//Ion Beam = Decreased Range, Decreased Ideal Range, Decreased the Duration and Decreased Hit Interval
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ion_beam/ion_beam.txt>/Part/Components/Weapon/Emitter"
+		Overrides
+		{
+			Range = 130
+			IdealRange = 110
+			Duration = .6
+			HitInterval = .2
+		}
+	}
+
+	{//Ion Beam = Decreased Damage to Shields
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ion_beam/ion_beam.txt>/Part/Components/Weapon/Emitter/HitShield/HitEffects/0"
+		Overrides
+		{
+			Damage = 150
+		}
+	}
+
+	{//Ion Beam = Decreased Damage to Parts
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ion_beam/ion_beam.txt>/Part/Components/Weapon/Emitter/HitOperational/HitEffects/0"
+		Overrides
+		{
+			Damage = 150
+		}
+	}
+
+	{//Ion Beam = Decreased Damage to Structural
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/ion_beam/ion_beam.txt>/Part/Components/Weapon/Emitter/HitStructural/HitEffects/0"
+		Overrides
+		{
+			Damage = 100
+		}
+	}
+
+//Medium Bullet
+
+	{//Medium Bullet = Decreased Range, Decreased Ideal Range and Decreased Speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_bullet.txt>"
+		Overrides
+		{
+			Range = 100
+			IdealRange = 50
+			Speed = 30
+		}
+	}
+
+	{//Medium Bullet = Decreased Penetration and Decreased
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_bullet.txt>/Components/Hit"
+		Overrides
+		{
+			Penetration = 1.0
+			PenetrationSpeed = 10
+		}
+	}	
+
+	{//Medium Bullet = Decreased Damage to Shields
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_bullet.txt>/Components/Hit/HitShield/HitEffects/0"
+		Overrides
+		{
+			Damage = 800
+		}
+	}	
+
+	{//Medium Bullet = Decreased Damage to Parts
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_bullet.txt>/Components/Hit/HitOperational/HitEffects/1"
+		Overrides
+		{
+			Damage = 800
+		}
+	}
+
+	{//Medium Bullet = Decreased Damage Penetrating Parts
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_bullet.txt>/Components/Hit/PenetratingOperational/HitEffects/1"
+		Overrides
+		{
+			Damage = 400
+		}
+	}
+
+//Medium Cannon
+	
+	{//Medium Cannon = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_cannon.txt>/Part"
+		Overrides
+		{
+			Cost = 2500
+			AIValue = 30
+			MaxHealth = 4500
+			PenetrationResistance = 75
+		}
+	}
+	
+	{//Medium Cannon = Increased Delay on shot-to-shot
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_cannon.txt>/Part/Components/LoadedAmmo"
+		Overrides
+		{
+			DelayBeforeReadyToUse = .35
+		}
+	}
+
+	{//Medium Cannon = Decreased the Max Ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_cannon.txt>/Part/Components/AmmoStorage"
+		Overrides
+		{
+			MaxAmmo = 4
+		}
+	}
+
+	{//Medium Cannon = Decreased Fire Speed, Increased Firing Arc, Decreased Rotate Speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_cannon/med_cannon.txt>/Part/Components/Turret"
+		Overrides
+		{
+			FireInterval = .85
+			FiringArc = 125d
+			RotateSpeed = 35d
+		}
+	}
+	
+//Medium Thruster
+	
+	{//Medium Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force and Increased Fuel Usage
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_thruster/med_thruster.txt>/Part"
+		Overrides
+		{
+			Cost = 1750
+			MaxHealth = 1500
+			PenetrationResistance = 0
+			ThrusterForce = 175
+			FuelUsage = 125
+		}
+	}
+
+	{//Medium Thruster = Increased Minimal Crew on the UI and increased the Ideal Crew on the UI
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_thruster/med_thruster.txt>/Part/CrewUIStats"
+		Overrides
+		{
+			Min = .0555
+			Ideal = .0999
+		}	
+	}
+	
+	{//Medium Thruster = Increased Minimal Power on the UI and increased the Ideal Power on the UI
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_thruster/med_thruster.txt>/Part/PowerUIStats"
+		Overrides
+		{
+			Min = .0555
+			Ideal = .0999
+		}	
+	}
+
+	{//Medium Thruster = Decreased the max ammo (battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/med_thruster/med_thruster.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 1750
+		}	
+	}	
+
+//Missile Factory
+
+	{//Missile Factory = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_factory/missile_factory.txt>/Part"
+		Overrides
+		{
+			Cost = 17500
+			AIValue = 50
+			MaxHealth = 7500
+			PenetrationResistance = 0
+		}
+	}
+
+	{//Missile Factory = Decreased Max Ammo (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_factory/missile_factory.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 1750
+		}
+	}
+	
+	{//Missile Factory = Reduced the process to make ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_factory/missile_factory.txt>/Part/Components/AmmoConverter"
+		Overrides
+		{
+			Interval = 1
+		}
+	}
+	
+	{//Missile Factory = Reduced the speed of .wav to syncronise to the process of ammo maker
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_factory/missile_factory.txt>/Part/Components/AmmoConverter/ConvertAmmoMediaEffects/0"
+		Overrides
+		{
+			Speed = 1
+		}
+	}	
+
+//Missile
+
+	{//Missile = Decreased Range, Decreased Ideal Range and Decreased Speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile.txt>"
+		Overrides
+		{
+			Range = 175
+			IdealRange = 125
+			Speed = 20
+		}
+	}
+	
+	{//Missile = Decreased Turn Speed(Aiming) and Turn speed (How much time takes the Missile to rotate 360 degrees)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile.txt>/Components/Homing"
+		Overrides
+		{
+			TurnVelocity = 270d
+			TurnThreshold = 7d
+		}
+	}
+	
+	{//Missile = Decreased Acceleration
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile.txt>/Components/Acceleration"
+		Overrides
+		{
+			Acceleration = 2
+		}
+	}
+
+	{//Missile = Decreased Life time of the Missile after launched
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile.txt>/Components/DeathByLifetime"
+		Overrides
+		{
+			Lifetime = 5
+		}
+	}
+
+	{//Missile = Decreased Health of the Missile for point deffense
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile.txt>/Components/Targetable"
+		Overrides
+		{
+			Health = 750
+		}
+	}
+
+	{//Missile = Decreased Damage to shield
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile.txt>/Components/Hit/HitShield/HitEffects/0"
+		Overrides
+		{
+			Damage = 3600
+		}
+	}
+
+	{//Missile = Decreased Damage to Operational and Structural. Decreased Radius to Operational and Structural
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile.txt>/Components/Hit/HitOperational/HitEffects/0"
+		Overrides
+		{
+			DamageVsOperationalPerTile = 1200
+			RadiusVsOperational = 3
+			DamageVsStructurePerTile = 900
+			RadiusVsStructure = 3
+		}
+	}	
+
+//Missile Launcher
+
+	{//Missile Launcher = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_launcher/missile_launcher.txt>/Part"
+		Overrides
+		{
+			Cost = 15000
+			AIValue = 60
+			MaxHealth = 4000
+			PenetrationResistance = 0
+		}
+	}
+
+//Missile Storage
+	
+	{//Missile Storage = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/missile_storage/missile_storage.txt>/Part"
+		Overrides
+		{
+			Cost = 1750
+			MaxHealth = 4000
+			AIValue = 25
+			PenetrationResistance = 0
+		}
+	}
+	
+//Point Defense Shot
+	
+	{//Point Defense Shot = Decreased Range, Decreased Ideal Range and Decreased Speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/point_defense/point_defense_shot.txt>"
+		Overrides
+		{
+			Range = 60
+			IdealRange = 60
+			Speed = 140
+		}
+	}
+	
+	{//Point Defense Shot = Decreased Damage to missiles
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/point_defense/point_defense_shot.txt>/Components/AntiBullet/HitBullet/HitEffects/0"
+		Overrides
+		{
+			Damage = 750
+		}
+	}
+
+//Point Defense
+
+	{//Pont Defense = Increased Cost, Decreased Health and decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/point_defense/point_defense.txt>/Part"
+		Overrides
+		{
+			Cost = 1250
+			MaxHealth = 1500
+			PenetrationResistance = 80
+		}
+	}
+
+	{//Pont Defense = Decreased the max ammo (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/point_defense/point_defense.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 750
+		}
+	}
+		
+	{//Pont Defense = Decreased The fire interval, Increased the Fire Delay, Increased the Firing Arc, Decreased the rotate Speed and Increased the Ammo Used per Shot (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/point_defense/point_defense.txt>/Part/Components/Turret"
+		Overrides
+		{
+			FireInterval = .15
+			FireDelay = 0.2
+			FiringArc = 145d
+			RotateSpeed = 135d
+			AmmoUsed = 25
+		}
+	}	
+
+//Power Storage
+
+	{//Power Storage = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/power_storage/power_storage.txt>/Part"
+		Overrides
+		{
+			Cost = 2500
+			AIValue = 10
+			MaxHealth = 3500
+			PenetrationResistance = 0
+		}
+	}
+
+	{//Power Storage = Decreased Max Ammo (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/power_storage/power_storage.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 11250
+		}
+	}
+	
+//Quarters
+
+	{//Quarters = Increased Cost, Decreased Health and Decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/quarters/quarters.txt>/Part"
+		Overrides
+		{
+			Cost = 750
+			MaxHealth = 3500
+			PenetrationResistance = 0
+		}
+	}
+	
+//Reactor	
+	
+	{//Reactor = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/reactor/reactor.txt>/Part"
+		Overrides
+		{
+			Cost = 17500
+			AIValue = 80
+			MaxHealth = 3500
+			PenetrationResistance = 0
+		}
+	}
+
+	{//Reactor = Increased the time each battery is produced
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/reactor/reactor.txt>/Part/Components/BatteryProducer"
+		Overrides
+		{
+			Interval = .99
+		}
+	}	
+
+//Sensor	
+	
+	{//Sensor = Increased Cost, Decreased Health and Decreased Penetration Resistance
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/sensor_array/sensor_array.txt>/Part"
+		Overrides
+		{
+			Cost = 25000
+			MaxHealth = 7000
+			PenetrationResistance = 0
+		}
+	}
+	
+	{//Sensor = Decreased Max Ammo (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/sensor_array/sensor_array.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 3500
+		}
+	}	
+	
+	{//Sensor = Increased Interval on how consumes Ammo (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/sensor_array/sensor_array.txt>/Part/Components/PowerDrain"
+		Overrides
+		{
+			Interval = 5
+		}
+	}
+	
+	{//Sensor = Decreased Range of the Sensor
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/sensor_array/sensor_array.txt>/Part/Components/Sensor"
+		Overrides
+		{
+			SightRadius = 650
+		}
+	}
+	
+//Shield Generator
+	
+	{//Shield Generator = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/shield_generator/shield_generator.txt>/Part"
+		Overrides
+		{
+			Cost = 6000
+			AIValue = 60
+			MaxHealth = 3000
+			PenetrationResistance = 0
+		}
+	}
+	
+	{//Shield Generator = Decreased Max Ammo (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/shield_generator/shield_generator.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 5000
+		}
+	}
+	
+	{//Shield Generator = Increased the Power Drain (Quantity)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/shield_generator/shield_generator.txt>/Part/Components/PowerDrain"
+		Overrides
+		{
+			FromQuantity = 200
+		}
+	}
+	
+//Small Laser Shot
+
+	{//Small Laser Shot = Decreased Range, Decreased Ideal Range and Decreased Speed
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_laser/small_laser_shot.txt>"
+		Overrides
+		{
+			Range = 80
+			IdealRange = 50
+			Speed = 70
+		}
+	}
+	
+	{//Small Laser Shot = Decreased Damage to Shields
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_laser/small_laser_shot.txt>/Components/Hit/HitShield/HitEffects/0"
+		Overrides
+		{
+			Damage = 300
+		}
+	}
+	
+	{//Small Laser Shot = Decreased Damage to Operational Rooms
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_laser/small_laser_shot.txt>/Components/Hit/HitOperational/HitEffects/0"
+		Overrides
+		{
+			Damage = 300
+		}
+	}
+	
+	{//Small Laser Shot = Decreased Damage to Structural
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_laser/small_laser_shot.txt>/Components/Hit/HitStructural/HitEffects/0"
+		Overrides
+		{
+			Damage = 150
+		}
+	}
+	
+//Small Laser
+	
+	{//Small Laser = Increased Cost, Decreased Health, Decreased Penetration Resistance, Increased AI Value
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_laser/small_laser.txt>/Part"
+		Overrides
+		{
+			Cost = 2500
+			AIValue = 15
+			MaxHealth = 3500
+			PenetrationResistance = 80
+		}
+	}
+	
+	{//Small Laser = Decreased Max Ammo
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_laser/small_laser.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 1500
+		}
+	}
+	
+	{//Small Laser = Decreased Fire Interval, Increased Fire Delay, Increased Firing Arc, Decreased Rotate Speed and Increased Ammo Used (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_laser/small_laser.txt>/Part/Components/Turret"
+		Overrides
+		{
+			FireInterval = 1
+			FireDelay = .6
+			FiringArc = 240d
+			RotateSpeed = 75d
+			AmmoUsed = 250
+		}
+	}
+
+//Small Thruster
+
+	{//Small Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force and Increased Fuel Ussage (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_thruster/small_thruster.txt>/Part"
+		Overrides
+		{
+			Cost = 750
+			MaxHealth = 750
+			PenetrationResistance = 0
+			ThrusterForce = 75
+			FuelUsage = 75
+		}
+	}
+	
+	{//Small Thruster = Decreased Max Ammo (Battery)
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/small_thruster/small_thruster.txt>/Part/Components/BatteryStorage"
+		Overrides
+		{
+			MaxAmmo = 750
+		}
+	}
+
+//Structure
+
+	{//Structure = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/structure/structure.txt>/Part"
+		Overrides
+		{
+			Cost = 75
+			MaxHealth = 750
+			Flammable = true
+			CrewSpeedFactor = .2
+		}
+	}
+	
+	{//Structure Wedge = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/structure_wedge/structure_wedge.txt>/Part"
+		Overrides
+		{
+			Cost = 35
+			MaxHealth = 350
+			Flammable = true
+			CrewSpeedFactor = .2
+		}
+	}
+	
+	{//Structure Wedge L= Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/structure2_wedge/structure2_wedge_L.txt>/Part"
+		Overrides
+		{
+			Cost = 75
+			MaxHealth = 750
+			Flammable = true
+			CrewSpeedFactor = .2
+		}
+	}
+	
+	{//Structure Wedge R = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/structure2_wedge/structure2_wedge_R.txt>/Part"
+		Overrides
+		{
+			Cost = 75
+			MaxHealth = 750
+			Flammable = true
+			CrewSpeedFactor = .2
+		}
+	}
+	
+//Wall Hole
+
+	{//Wall Hole = Increased Cost and Can Be Buildable
+		Action = Overrides
+		OverrideIn = "<Ships/Terran/wall_hole/wall_hole.txt>"
+		Overrides
+		{
+			Cost = 10
+			IsBuildable = true
+		}
+	}
+]

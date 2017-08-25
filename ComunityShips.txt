@@ -1,0 +1,237 @@
+BountyShips
+[
+
+	//Deathpuff12's Ships (E3DS)
+	{
+		BaseValue = 318700
+		DesignedShip = "Ships/Deathpuff12/E3DS/Sentinel-class Frigate.ship.png"
+	}
+	{
+		BaseValue = 331850
+		DesignedShip = "Ships/Deathpuff12/E3DS/Palisade-class Frigate.ship.png"
+	}
+	{
+		BaseValue = 483600
+		DesignedShip = "Ships/Deathpuff12/E3DS/Vanguard-class Destroyer.ship.png"
+	}
+	{
+		BaseValue = 582950
+		DesignedShip = "Ships/Deathpuff12/E3DS/Lance-class Heavy Destroyer.ship.png"
+	}
+	{
+		BaseValue = 631600
+		DesignedShip = "Ships/Deathpuff12/E3DS/Archer-class Heavy Destroyer.ship.png"
+	}
+	{
+		BaseValue = 709950
+		DesignedShip = "Ships/Deathpuff12/E3DS/Guardian-class Heavy Destroyer.ship.png"
+	}
+	{
+		BaseValue = 1335450
+		DesignedShip = "Ships/Deathpuff12/E3DS/Shieldbearer-class Heavy Cruiser.ship.png"
+	}
+	{
+		BaseValue = 1396900
+		DesignedShip = "Ships/Deathpuff12/E3DS/Warrior-class Heavy Cruiser.ship.png"
+	}
+	{
+		BaseValue = 269100
+		DesignedShip = "Ships/Deathpuff12/E3DS/Stalwart-class Scout.ship.png"
+	}
+        //Walt's ships
+        {
+                BaseValue = 382000
+                DesignedShip = "Ships/Walt/Skeletor.ship.png"
+        }
+        //Sweatplant's ships
+        {
+                BaseValue = 41250
+                DesignedShip = "Ships/Sweatplant/Little ships/Minimal.ship.png"
+        }
+
+
+        //Chefcraw's ships
+	{
+		BaseValue = 165950
+		DesignedShip = "Ships/Chefcraw/CF-Omega.ship.png"
+	}
+	{
+		BaseValue = 176850
+		DesignedShip = "Ships/Chefcraw/MCF-Omega.ship.png"
+	}
+	{
+		BaseValue = 328550
+		DesignedShip = "Ships/Chefcraw/MCM-Carp.ship.png"
+	}
+        // ---
+
+
+        // Lapsapnow's ships
+        {
+                BaseValue = 835900
+                DesignedShip = "Ships/Lapsapnow/Last Stand Navy/Sivel Oreeal Mk1.ship.png"
+        }
+        {
+                BaseValue = 96500
+                DesignedShip = "Ships/Lapsapnow/Last Stand Navy/Sivir Indi Mk1.ship.png"
+        }
+        {
+                BaseValue = 393200
+                DesignedShip = "Ships/Lapsapnow/Last Stand Navy/LSN - SeilVixtinaar.ship.png"
+        }
+        {
+                BaseValue = 766700
+                DesignedShip = "Ships/Lapsapnow/Last Stand Navy/Velnought Mk2.ship.png"
+        }
+        // ---
+
+
+		// Mario's ships
+			//Sycamore (Mario)
+	{
+		BaseValue = 52550
+		DesignedShip = "Ships/mario161/Sycamore Empire/SYC IoScout.ship.png"
+	}
+	{
+		BaseValue = 109600
+		DesignedShip = "Ships/mario161/Sycamore Empire/SYC TriRaptor Mk1.ship.png"
+	}
+	{
+		BaseValue = 163800
+		DesignedShip = "Ships/mario161/Sycamore Empire/SYC TriRaptor Mk2.ship.png"
+	}
+	{
+		BaseValue = 548200
+		DesignedShip = "Ships/mario161/Sycamore Empire/SYC Testudo Gracea.ship.png"
+	}
+	{
+		BaseValue = 1045300
+		DesignedShip = "Ships/mario161/Sycamore Empire/SYC Varisk.ship.png"
+	}
+	{
+		BaseValue = 1896700
+		DesignedShip = "Ships/mario161/Sycamore Empire/SYC ArchAvian.ship.png"
+	}
+			//Gemini (Mario)
+	{
+		BaseValue = 52800
+		DesignedShip = "Ships/mario161/Gemini Imperial Republic/GIR CannoScout.ship.png"
+	}
+	{
+		BaseValue = 109900
+		DesignedShip = "Ships/mario161/Gemini Imperial Republic/GIR CannonStorm Mk1.ship.png"
+	}
+	{
+		BaseValue = 157400
+		DesignedShip = "Ships/mario161/Gemini Imperial Republic/GIR CannonStorm Mk2.ship.png"
+	}
+	{
+		BaseValue = 547600
+		DesignedShip = "Ships/mario161/Gemini Imperial Republic/GIR Armordillo.ship.png"
+	}
+	{
+		BaseValue = 764200
+		DesignedShip = "Ships/mario161/Gemini Imperial Republic/GIR Machevis.ship.png"
+	}
+	{
+		BaseValue = 1329200
+		DesignedShip = "Ships/mario161/Gemini Imperial Republic/GIR FireTorch.ship.png"
+	}
+			//Living ships (Mario)
+	{
+		BaseValue = 163700
+		DesignedShip = "Ships/mario161/Living Ships/Small Energy Leech.ship.png"
+	}
+	{
+		BaseValue = 376200
+		DesignedShip = "Ships/mario161/Living Ships/Energy Leech.ship.png"
+	}
+	{
+		BaseValue = 791100
+		DesignedShip = "Ships/mario161/Living Ships/Ionic Energy Leech.ship.png"
+	}
+			//Other (Mario)
+	{
+		BaseValue = 33100
+		DesignedShip = "Ships/mario161/Other/Ultra-Compact Ship.ship.png"
+	}
+		// ---
+
+
+        // Umbral Reaver's ships
+        {
+                BaseValue = 607800
+                DesignedShip = "Ships/UmbralReaver/Chain of Consequence.ship.png"
+        }
+
+
+        // DuplexMinotaur9’s Ships
+        {       BaseValue = 219650
+                DesignedShip = "Ships/DuplexMinotaur9/Stinger.ship.png"
+        }
+
+
+       //The sun is made on sun's ships
+         {       BaseValue = 2237550
+                DesignedShip = "Ships/The sun is made of sun/Broadholder.ship.png"
+        }
+
+         {       BaseValue = 109850
+                DesignedShip = "Ships/The sun is made of sun/Wasp.ship.png"
+        }
+
+         {       BaseValue = 606200
+                DesignedShip = "Ships/The sun is made of sun/Hellraiser.ship.png"
+        }
+
+         {       BaseValue = 514500
+                DesignedShip = "Ships/The sun is made of sun/Subtug.ship.png"
+        }
+
+         {       BaseValue = 4199450
+                DesignedShip = "Ships/The sun is made of sun/Subboomer.ship.png"
+        }
+
+
+        //Krolon's ships
+			//Jellyships (Krolon)
+        {       BaseValue = 350850
+   	        DesignedShip = "Ships/Krolon/Meduz V.2.ship.png"
+        }
+        {   
+                BaseValue = 2722200
+   	        DesignedShip = "Ships/Krolon/Meduz V.XV ''Ass''.ship.png"
+        }
+        {
+                BaseValue = 748050
+   	        DesignedShip = "Ships/Krolon/Meduz V.7.ship.png"
+        }
+	// ---
+		//Face’s ships
+	{	BaseValue = 2174900
+		DesignedShip = "Ships/Face/Zeus BB.ship.png"
+	}
+
+	{	BaseValue = 241500
+		DesignedShip = "Ships/Face/Face-It.ship.png"
+	}
+		//Duttyfly1's ships
+	{	BaseValue = 1140200
+		DesignedShip = "Ships/Duttyfly1/ASC MK1.ship.png"
+	}
+	{	BaseValue = 1546500
+		DesignedShip = "Ships/Duttyfly1/ASC MK2.ship.png"
+	}
+	{	BaseValue = 3176100
+		DesignedShip = "Ships/Duttyfly1/ASC MK4.ship.png"
+	}
+	{	BaseValue = 246650
+		DesignedShip = "Ships/Duttyfly1/Osiris1 MK4.ship.png"
+	}
+	{	BaseValue = 97500
+		DesignedShip = "Ships/Duttyfly1/SF-1.ship.png"
+	}
+	{	BaseValue = 99500
+		DesignedShip = "Ships/Duttyfly1/SF-1 MK2.ship.png"
+	}
+]
