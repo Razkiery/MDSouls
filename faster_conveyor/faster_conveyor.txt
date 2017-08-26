@@ -1,0 +1,109 @@
+Part : /BASE_PART
+{
+	NameKey = "Parts/FasterConveyor"
+	IconNameKey = "Parts/FasterConveyorIcon"
+	IDString = fasterconveyor
+	EditorGroup = "Crew"
+	DescriptionKey = "Parts/FasterConveyorDesc"
+	Cost = 400
+	Size = [1, 1]
+	MaxHealth = 1500
+	PenetrationResistance = .5
+	CrewSpeedFactor
+	{
+		Up = 1.8
+		Left = 1.1
+		Right = 1.1
+		Down = .15
+	}
+	CrewCongestedSpeedFactor
+	{
+		Up = .85
+		Left = .35
+		Right = .35
+		Down = .35
+	}
+	CrewFireSpeedFactor
+	{
+		Up = .5
+		Left = .3
+		Right = .3
+		Down = .3
+	}
+	TypeCategories = [corridor]
+	IsRotateable = true
+	IsWalled = false
+	GeneratorRequiresDoor = false
+	CreatePassableHolesWhenDestroyed = true
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [32, 32]
+	}
+	BlueprintSprites
+	[
+		{
+			File = "blueprints.png"
+			Size = [1, 1]
+		}
+	]
+	BlueprintBlendSprites
+	[
+		: <../Walls/blueprint walls.txt>
+		{
+			Location = [.5, .5]
+			BlendsWithCategories = [corridor]
+		}
+	]
+	Components
+	{
+		WallsBlend : <../Walls/walls.txt>
+		{
+			Type = BlendSprite
+			Location = [.5, .5]
+			BlendsWithCategories = [corridor]
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, .5]
+			Floor = &<../corridor/corridor.txt>/Part/Components/Graphics/Floor
+			OperationalDoodad
+			{
+				Layer = "doodads_low"
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"conveyor1.png"
+							"conveyor2.png"
+							"conveyor3.png"
+							"conveyor4.png"
+							"conveyor5.png"
+							"conveyor6.png"
+							"conveyor7.png"
+							"conveyor8.png"
+						]
+						Size = [1, 1]
+						AnimationInterval = .0111
+						AnimationStartTime = Zero
+					}
+				]
+			}
+			Roof = &<../corridor/corridor.txt>/Part/Components/Graphics/Roof
+		}
+
+		DestroyedEffects
+		{
+			Type = DeathEffects
+			MediaEffects = &/EFFECT_PREFABS/SmallPartDestroyedDry
+			Location = [.5, .5]
+		}
+	}
+}

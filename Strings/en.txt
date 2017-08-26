@@ -4,4 +4,12 @@ Parts
 	LargeLaser = "Large Laser"
 	LargeLaserIcon = "Lar. Laser"
 	LargeLaserDesc = "Provides a better damage than the standard one at more cost and slower fire rate."
+	
+	FastConveyor = "Fast Conveyor"
+	FastConveyorIcon = "Fast Conveyor"
+	FastConveyorDesc = "Gives you a little bit more boost to your crew members than the standard conveyor"
+	
+	FasterConveyor = "Faster Conveyor"
+	FasterConveyorIcon = "Faster Conveyor"
+	FasterConveyorDesc = "Gives to your crew members the faster boost with this!"
 }

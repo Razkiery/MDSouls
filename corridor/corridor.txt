@@ -1,37 +1,18 @@
 Part : /BASE_PART
 {
-	NameKey = "Parts/Conveyor"
-	IconNameKey = "Parts/ConveyorIcon"
-	IDString = conveyor
-	EditorGroup = "Crew"
-	DescriptionKey = "Parts/ConveyorDesc"
-	Cost = 300
+	NameKey = "Parts/Corridor"
+	IconNameKey = "Parts/CorridorIcon"
+	IDString = corridor
+	DefaultEditorHotkey = [Z]
+	DescriptionKey = "Parts/CorridorDesc"
+	Cost = 100
 	Size = [1, 1]
 	MaxHealth = 1000
 	PenetrationResistance = .5
-	CrewSpeedFactor
-	{
-		Up = 1.5
-		Left = .75
-		Right = .75
-		Down = .25
-	}
-	CrewCongestedSpeedFactor
-	{
-		Up = .6
-		Left = .25
-		Right = .25
-		Down = .25
-	}
-	CrewFireSpeedFactor
-	{
-		Up = .4
-		Left = .2
-		Right = .2
-		Down = .2
-	}
+	CreatePartPerTileWhenGrabbed = ""
+	CrewSpeedFactor = 1
 	TypeCategories = [corridor]
-	IsRotateable = true
+	IsRotateable = false
 	IsWalled = false
 	GeneratorRequiresDoor = false
 	CreatePassableHolesWhenDestroyed = true
@@ -72,31 +53,46 @@ Part : /BASE_PART
 		{
 			Type = Graphics
 			Location = [.5, .5]
-			Floor = &<../corridor/corridor.txt>/Part/Components/Graphics/Floor
-			OperationalDoodad
+			Floor
 			{
-				Layer = "doodads_low"
+				Layer = "floors"
+				RandomUVRotation = true
 				DamageLevels
 				[
 					{
-						AnimationFiles
-						[
-							"conveyor1.png"
-							"conveyor2.png"
-							"conveyor3.png"
-							"conveyor4.png"
-							"conveyor5.png"
-							"conveyor6.png"
-							"conveyor7.png"
-							"conveyor8.png"
-						]
+						File = "floor.png"
 						Size = [1, 1]
-						AnimationInterval = .0333
-						AnimationStartTime = Zero
+					}
+					{
+						File = "floor_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "floor_66.png"
+						Size = [1, 1]
 					}
 				]
 			}
-			Roof = &<../corridor/corridor.txt>/Part/Components/Graphics/Roof
+			Roof
+			{
+				Layer = "roofs"
+				RandomUVRotation = true
+				DamageLevels
+				[
+					{
+						File = "roof.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
 		}
 
 		DestroyedEffects

@@ -212,6 +212,15 @@ Description = "Makes the game more difficult, use with caution!\n\n"\
 //					- Has more HP than the standard laser
 //					- Has more AI value than the standard laser
 //			- |NEW CONVEYOR TYPE ADDED!| - 
+//				- Added Fast Conveyor:
+//					- The crew moves faster to each side than the normal conveyor
+//					- Has more HP than the normal conveyor
+//					- Cost more than the normal conveyor
+//			- |NEW CONVEYOR TYPE ADDED!| - 
+//				- Added Faster Conveyor:
+//					- The Crew moves faster to each side than the fast conveyor
+//					- Has more HP than the fast conveyor
+//					- Cost more than the fast conveyor
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 //Ships from the comunity
 StringsFolder = "Strings"
@@ -226,12 +235,15 @@ ShipLibraries
 Actions
 [
 //Weapons Added
+
 	{
 		Action = AddMany
 			AddTo = "<Ships/Terran/terran.txt>/Terran/Parts"
 		ManyToAdd
 		[
 			&<large_laser/large_laser.txt>/Part
+			&<fast_conveyor/fast_conveyor.txt>/Part
+			&<faster_conveyor/faster_conveyor.txt>/Part
 		]
 	}
 //Ships From The Comunity
