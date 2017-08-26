@@ -1,1 +1,7 @@
 CommunityShipsLibrary = "Community Ships";
+Parts
+{
+	LargeLaser = "Large Laser"
+	LargeLaserIcon = "Lar. Laser"
+	LargeLaserDesc = "Provides a better damage than the standard one at more cost and slower fire rate."
+}
