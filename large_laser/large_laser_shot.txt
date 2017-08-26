@@ -1,7 +1,7 @@
 ID = large_laser_shot
-Range = 100
-IdealRange = 60
-Speed = 80
+Range = 110
+IdealRange = 70
+Speed = 85
 
 Components
 {
@@ -60,7 +60,7 @@ Components
 				}
 				{
 					Type = Impulse;
-					Impulse = 5;
+					Impulse = 6;
 				}
 			]
 
@@ -76,7 +76,7 @@ Components
 				}
 				{
 					Type = Impulse;
-					Impulse = 5;
+					Impulse = 6;
 				}
 			]
 

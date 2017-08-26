@@ -201,7 +201,18 @@ Description = "Makes the game more difficult, use with caution!\n\n"\
 //				- Structure Wedge R = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
 //				- Wall Hole = Increased Cost and Can Be Buildable
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-
+// V 0.0.16
+//|FIX|	- Added to GitHub for a better modding and changelog
+//			- |NEW LASER TYPE ADDED!| - 
+//				- Added Large Laser:
+//					- Do more damage to all parts than the standard laser
+//					- Has more range than the standard laser
+//					- Shoots slower than the standard laser
+//					- Cost more than the standard laser
+//					- Has more HP than the standard laser
+//					- Has more AI value than the standard laser
+//			- |NEW CONVEYOR TYPE ADDED!| - 
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 //Ships from the comunity
 StringsFolder = "Strings"
 ShipLibraries
@@ -214,6 +225,15 @@ ShipLibraries
 
 Actions
 [
+//Weapons Added
+	{
+		Action = AddMany
+			AddTo = "<Ships/Terran/terran.txt>/Terran/Parts"
+		ManyToAdd
+		[
+			&<large_laser/large_laser.txt>/Part
+		]
+	}
 //Ships From The Comunity
 
 	{//Ships From the comunity
