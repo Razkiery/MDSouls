@@ -234,7 +234,7 @@ ShipLibraries
 
 Actions
 [
-//Weapons Added
+//Parts Added
 
 	{
 		Action = AddMany
@@ -244,6 +244,7 @@ Actions
 			&<large_laser/large_laser.txt>/Part
 			&<fast_conveyor/fast_conveyor.txt>/Part
 			&<faster_conveyor/faster_conveyor.txt>/Part
+			&<carbon_armor2/carbon_armor2.txt>/Part
 		]
 	}
 //Ships From The Comunity
