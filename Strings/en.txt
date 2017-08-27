@@ -16,4 +16,12 @@ Parts
 	CarbonArmor2 = "Carbonic Armor"
 	CarbonArmor2Icon = "Carb. Armor"
 	CarbonArmor2Desc = "A double infused carbonic armor made with carbon and forged iron, converted in to a basic steel armor"
+	
+	CarbonArmor2WedgeL = "Carbonic Armor 1x2 Wedge (Left)"
+	CarbonArmor2WedgeLIcon = "Carb. Armor 1x2 (L)"
+	CarbonArmor2WedgeLDesc =  &CarbonArmor2Desc
+
+	CarbonArmor2WedgeR = "Carbonic Armor 1x2 Wedge (Right)"
+	CarbonArmor2WedgeRIcon = "Carb. Armor 1x2 (R)"
+	CarbonArmor2WedgeRDesc =  &CarbonArmor2Desc
 }

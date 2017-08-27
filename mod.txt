@@ -245,6 +245,8 @@ Actions
 			&<fast_conveyor/fast_conveyor.txt>/Part
 			&<faster_conveyor/faster_conveyor.txt>/Part
 			&<carbon_armor2/carbon_armor2.txt>/Part
+			&<carbon_armor2_wedge/carbon_armor2_wedge_L.txt>/Part
+			&<carbon_armor2_wedge/carbon_armor2_wedge_R.txt>/Part
 		]
 	}
 //Ships From The Comunity
