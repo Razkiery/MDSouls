@@ -241,13 +241,17 @@ Actions
 			AddTo = "<Ships/Terran/terran.txt>/Terran/Parts"
 		ManyToAdd
 		[
+			//Weapons
 			&<Parts/large_laser/large_laser.txt>/Part
+			//Miscelaneus
 			&<Parts/fast_conveyor/fast_conveyor.txt>/Part
 			&<Parts/faster_conveyor/faster_conveyor.txt>/Part
+			//Armor
+			&<Parts/carbon_armor/carbon_armor.txt>/Part
+			&<Parts/carbon_armor_tri/carbon_armor_tri.txt>/Part
 			&<Parts/carbon_armor2/carbon_armor2.txt>/Part
 			&<Parts/carbon_armor2_wedge/carbon_armor2_wedge_L.txt>/Part
 			&<Parts/carbon_armor2_wedge/carbon_armor2_wedge_R.txt>/Part
-			&<Parts/carbon_armor_tri/carbon_armor_tri.txt>/Part
 		]
 	}
 //Ships From The Comunity
@@ -558,7 +562,7 @@ Actions
 			PenetrationResistance = 80
 			Flammable = true
 			Density = 2
-			AreaDamageBlockFactor = .55
+			AreaDamageBlockFactor = .15
 		}
 	}
 	

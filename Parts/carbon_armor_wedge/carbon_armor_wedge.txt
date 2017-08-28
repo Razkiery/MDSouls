@@ -1,21 +1,21 @@
 Part : /BASE_PART
 {
-	NameKey = "Parts/ArmorWedge"
-	IconNameKey = "Parts/ArmorWedgeIcon"
-	IDString = armor_wedge
+	NameKey = "Parts/CarbonArmorWedge"
+	IconNameKey = "Parts/CarbonArmorWedgeIcon"
+	IDString = carbonarmor_wedge
 	EditorGroup = "Defenses"
-	DescriptionKey = "Parts/ArmorWedgeDesc"
-	Cost = 150
+	DescriptionKey = "Parts/CarbonArmorWedgeDesc"
+	Cost = 250
 	Size = [1, 1]
 	AllowedContiguity = [Right, Bottom]
 	SelectionTypeID = "armor"
-	MaxHealth = 2000
-	AreaDamageBlockFactor = .25
-	Flammable = false
+	MaxHealth = 1850
+	AreaDamageBlockFactor = .20
+	Flammable = true
 	CreatePartPerTileWhenDestroyed = ""
 	CreatePartWhenDestroyed = structure_wedge
 	CreatePartPerTileWhenGrabbed = ""
-	PenetrationResistance = 100
+	PenetrationResistance = 80
 	CrewSpeedFactor = 0
 	Density = 3
 	IsRotateable = true

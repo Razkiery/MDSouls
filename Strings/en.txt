@@ -13,19 +13,27 @@ Parts
 	FasterConveyorIcon = "Faster Conveyor"
 	FasterConveyorDesc = "Gives to your crew members the faster boost with this!"
 	
+	CarbonArmor = "Carbonic Armor"
+	CarbonArmorIcon = "Carb. Armor"
+	CarbonArmorDesc = "A double infused carbonic armor made with carbon and forged iron, converted in to a basic steel armor"
+	
+	CarbonArmorWedge = "Carbonic Armor"
+	CarbonArmorWedgeIcon = "Carb. Armor"
+	CarbonArmorWedgeDesc = &CarbonArmorDesc
+	
 	CarbonArmor2 = "Carbonic Armor"
-	CarbonArmor2Icon = "Carb. Armor"
-	CarbonArmor2Desc = "A double infused carbonic armor made with carbon and forged iron, converted in to a basic steel armor"
+	CarbonArmor2Icon = "Carb. Armor Doble"
+	CarbonArmor2Desc = &CarbonArmorDesc
 	
 	CarbonArmor2WedgeL = "Carbonic Armor 1x2 Wedge (Left)"
 	CarbonArmor2WedgeLIcon = "Carb. Armor 1x2 (L)"
-	CarbonArmor2WedgeLDesc =  &CarbonArmor2Desc
+	CarbonArmor2WedgeLDesc =  &CarbonArmorDesc
 
 	CarbonArmor2WedgeR = "Carbonic Armor 1x2 Wedge (Right)"
 	CarbonArmor2WedgeRIcon = "Carb. Armor 1x2 (R)"
-	CarbonArmor2WedgeRDesc =  &CarbonArmor2Desc
+	CarbonArmor2WedgeRDesc =  &CarbonArmorDesc
 	
 	CarbonArmorTri =  "Carbonic armor triangular"
 	CarbonArmorTriIcon = "Carb. Armor Triangle"
-	CarbonArmorTriDesc = &CarbonArmor2Desc
+	CarbonArmorTriDesc = &CarbonArmorDesc
 }

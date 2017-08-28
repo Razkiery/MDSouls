@@ -1,18 +1,17 @@
 Part : /BASE_PART
 {
-	NameKey = "Parts/CarbonArmor2"
-	IconNameKey = "Parts/CarbonArmor2Icon"
-	IDString = carbonarmor2
+	NameKey = "Parts/CarbonArmor"
+	IconNameKey = "Parts/CarbonArmorIcon"
+	IDString = carbonarmor
 	EditorGroup = "Defenses"
-	EditorReplacementPartID = armor
-	DescriptionKey = "Parts/CarbonArmor2Desc"
-	Cost = 950
-	Size = [2, 1]
+	DescriptionKey = "Parts/CarbonArmorDesc"
+	Cost = 500
+	Size = [1, 1]
 	SelectionTypeID = "armor"
-	MaxHealth = 7500
+	MaxHealth = 3750
 	AreaDamageBlockFactor = .20
 	Flammable = true
-	PenetrationResistance = 80
+	PenetrationResistance = 85
 	CreatePartPerTileWhenGrabbed = ""
 	CrewSpeedFactor = 0
 	Density = 3
@@ -27,13 +26,13 @@ Part : /BASE_PART
 			File = "icon.png"
 			SampleMode = Linear
 		}
-		Size = [64, 32]
+		Size = [32, 32]
 	}
 	BlueprintSprites
 	[
 		{
 			File = "blueprints.png"
-			Size = [2, 1]
+			Size = [1, 1]
 		}
 	]
 	Components
@@ -41,7 +40,7 @@ Part : /BASE_PART
 		Graphics
 		{
 			Type = Graphics
-			Location = [1, 0.5]
+			Location = [0.5, 0.5]
 			Floor // This is needed so that armor shows up in ship ghosts.
 			{
 				Layer = "floors"
@@ -49,15 +48,15 @@ Part : /BASE_PART
 				[
 					{
 						File = "armor.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 					{
 						File = "armor_33.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 					{
 						File = "armor_66.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 				]
 			}
@@ -68,15 +67,15 @@ Part : /BASE_PART
 				[
 					{
 						File = "armor.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 					{
 						File = "armor_33.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 					{
 						File = "armor_66.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 				]
 			}
@@ -87,15 +86,15 @@ Part : /BASE_PART
 				[
 					{
 						File = "roof.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 					{
 						File = "roof_33.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 					{
 						File = "roof_66.png"
-						Size = [2, 1]
+						Size = [1, 1]
 					}
 				]
 			}
@@ -105,7 +104,7 @@ Part : /BASE_PART
 		{
 			Type = DeathEffects
 			MediaEffects = &/EFFECT_PREFABS/SmallPartDestroyedDry
-			Location = [1, .5]
+			Location = [.5, .5]
 		}
 	}
 }

@@ -6,19 +6,19 @@ Part : /BASE_PART
 	EditorGroup = "Defenses"
 	DescriptionKey = "Parts/CarbonArmor2WedgeLDesc"
 	EditorReplacementPartID = ""
-	Cost = 400
+	Cost = 500
 	Size = [1, 2]
 	AllowedContiguity = [Right, Bottom]
 	SelectionTypeID = "armor"
-	MaxHealth = 5000
-	AreaDamageBlockFactor = .30
+	MaxHealth = 4000
+	AreaDamageBlockFactor = .20
 	Flammable = true
 	CreatePartPerTileWhenDestroyed = ""
 	CreatePartWhenDestroyed = structure2_wedge_L
 	CreatePartPerTileWhenGrabbed = ""
 	PenetrationResistance = 80
 	CrewSpeedFactor = 0
-	Density = 4
+	Density = 3
 	IsRotateable = true
 	IsWalled = true
 	ExternalWallsByCell
@@ -87,7 +87,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 0
 						}
@@ -110,7 +110,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 0
 						}
@@ -133,7 +133,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 1
 						}
@@ -156,7 +156,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 1
 						}
@@ -179,7 +179,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 2
 						}
@@ -202,7 +202,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 2
 						}
@@ -225,7 +225,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 3
 						}
@@ -248,7 +248,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_blueprints.png"
+							File = "../carbon_armor_wedge/tri_blueprints.png"
 							Size = [1, 1]
 							UVRotation = 3
 						}
@@ -340,7 +340,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 0
 						}
@@ -366,7 +366,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 0
 						}
@@ -392,7 +392,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 1
 						}
@@ -418,7 +418,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 1
 						}
@@ -444,7 +444,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 2
 						}
@@ -470,7 +470,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 2
 						}
@@ -496,7 +496,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 3
 						}
@@ -522,7 +522,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_roof.png"
+							File = "../carbon_armor_wedge/tri_roof.png"
 							Size = [1, 1]
 							UVRotation = 3
 						}
@@ -549,7 +549,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 0
 						}
@@ -575,7 +575,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 0
 						}
@@ -601,7 +601,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 1
 						}
@@ -627,7 +627,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 1
 						}
@@ -653,7 +653,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 2
 						}
@@ -679,7 +679,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 2
 						}
@@ -705,7 +705,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 3
 						}
@@ -731,7 +731,7 @@ Part : /BASE_PART
 					DamageLevels
 					[
 						{
-							File = "../armor_wedge/tri_armor.png"
+							File = "../carbon_armor_wedge/tri_armor.png"
 							Size = [1, 1]
 							UVRotation = 3
 						}
