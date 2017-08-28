@@ -1,10 +1,10 @@
 Part : /BASE_PART
 {
-	NameKey = "Parts/ArmorTri"
-	IconNameKey = "Parts/ArmorTriIcon"
-	IDString = armor_tri
+	NameKey = "Parts/CarbonArmorTri"
+	IconNameKey = "Parts/CarbonArmorTriIcon"
+	IDString = carbonarmor_tri
 	EditorGroup = "Defenses"
-	DescriptionKey = "Parts/ArmorTriDesc"
+	DescriptionKey = "Parts/CarbonArmorTriDesc"
 	Cost = 75
 	Size = [1, 1]
 	AllowedContiguity = [Bottom]

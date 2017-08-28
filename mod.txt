@@ -241,12 +241,13 @@ Actions
 			AddTo = "<Ships/Terran/terran.txt>/Terran/Parts"
 		ManyToAdd
 		[
-			&<large_laser/large_laser.txt>/Part
-			&<fast_conveyor/fast_conveyor.txt>/Part
-			&<faster_conveyor/faster_conveyor.txt>/Part
-			&<carbon_armor2/carbon_armor2.txt>/Part
-			&<carbon_armor2_wedge/carbon_armor2_wedge_L.txt>/Part
-			&<carbon_armor2_wedge/carbon_armor2_wedge_R.txt>/Part
+			&<Parts/large_laser/large_laser.txt>/Part
+			&<Parts/fast_conveyor/fast_conveyor.txt>/Part
+			&<Parts/faster_conveyor/faster_conveyor.txt>/Part
+			&<Parts/carbon_armor2/carbon_armor2.txt>/Part
+			&<Parts/carbon_armor2_wedge/carbon_armor2_wedge_L.txt>/Part
+			&<Parts/carbon_armor2_wedge/carbon_armor2_wedge_R.txt>/Part
+			&<Parts/carbon_armor_tri/carbon_armor_tri.txt>/Part
 		]
 	}
 //Ships From The Comunity

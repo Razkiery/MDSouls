@@ -24,4 +24,8 @@ Parts
 	CarbonArmor2WedgeR = "Carbonic Armor 1x2 Wedge (Right)"
 	CarbonArmor2WedgeRIcon = "Carb. Armor 1x2 (R)"
 	CarbonArmor2WedgeRDesc =  &CarbonArmor2Desc
+	
+	CarbonArmorTri =  "Carbonic armor triangular"
+	CarbonArmorTriIcon = "Carb. Armor Triangle"
+	CarbonArmorTriDesc = &CarbonArmor2Desc
 }
