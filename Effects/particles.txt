@@ -1,1 +1,3 @@
 AutoTurretShot  = &<../Effects/Particles/AutoTurret/auto_shot.txt>
+IonSmallThrusterGlow = &<../Effects/Particles/IonThrusters/ion_small_thruster_glow.txt>
+IonSmallThrusterTrail = &<../Effects/Particles/IonThrusters/ion_small_thruster_trail.txt>

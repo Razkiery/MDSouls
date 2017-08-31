@@ -25,7 +25,7 @@ Components
 		{
 			AtlasSprite
 			{
-				Texture = "point_defense_shot.png"
+				Texture = "auto_turret_shot.png"
 				Size = [8, .5]
 			}
 			FrameCount = 8
@@ -88,7 +88,7 @@ Components
 
 				: /SOUNDS/AudioExterior
 				{
-					Sound = "point_defense_shoot.wav"
+					Sound = "auto_turret_shoot.wav"
 					Volume = .4
 					SpeedVariation = .4
 				}
@@ -106,7 +106,7 @@ Components
 			[
 				{
 					Type = PartDamage
-					Damage = 5
+					Damage = 10
 				}
 				{
 					Type = Impulse;
@@ -120,7 +120,7 @@ Components
 
 				: /SOUNDS/AudioExterior
 				{
-					Sound = "point_defense_shoot.wav"
+					Sound = "auto_turret_shoot.wav"
 					Volume = .3
 					SpeedVariation = .4
 				}

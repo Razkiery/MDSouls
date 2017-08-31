@@ -237,6 +237,10 @@
 			- FEATURE: Added new GUI icons for all the parts of the mods and changed by a tiers
 			- FEATURE: Overrided the entire Bounty Mode for future updates
 			- FEATURE: Overrided the entire Galaxy Map for future updates
+			- |NEW DIFFICULTY ADDED!| -
+				- Pirates has added.
+			- |NEW TIER SHIPS ADDED ADDED!| -
+				- Only for the Pirates: 3-6 millions ships added to appear in the Pirate sectors
 			- |NEW ARMOR TYPE ADDED!| -
 				- Carbonic armor added:
 					- 25% Better stats than the Standard armor -

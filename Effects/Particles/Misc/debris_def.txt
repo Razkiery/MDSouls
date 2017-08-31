@@ -17,9 +17,12 @@ Initializers
 		Type = VelocityToWorldSpace
 		LocationIn = location
 		LocationOut = location
-		Name = "Convert initial velocity to world space."
+		Name = "Convert velocity to world space"
 		Enabled = true
 		UpdateAfterInit = false
+		RotationIn = rot
+		RotationOut = rot
+		VelocityInOut = velocity
 		VelocityIn = velocity
 		VelocityOut = velocity
 	}
@@ -29,16 +32,86 @@ Initializers
 		VelocityOut = velocity
 		Name = "Inherit velocity"
 		Enabled = true
-		UpdateAfterInit = false
 		VelocityInOut = velocity
+		RotationIn = rot
+		RotationOut = rot
+		UpdateAfterInit = false
+		DataOut = sprite_index
+		ValueType = Int
+		FromValue = 0
+		ToValue = 6
 	}
-]
+	{
+		Type = SetRandom
+		SpriteIndexIn = sprite_index
+		UvRectOut = uv_rect
+		TextureSize
+		{
+			X = 256
+			Y = 512
+		}
+		SpriteSize
+		{
+			X = 128
+			Y = 128
+		}
+		SpriteCount = 7
+		SpritesPerRow = 2
+		PixelOffset
+		{
+			X = 0
+			Y = 0
+		}
+		Name = "Sprite Index"
+		Enabled = true
+		UpdateAfterInit = false
+		DataOut = sprite_index
+		ValueType = Int
+		FromValue = 0
+		ToValue = 15
+	}
+	{
+		Type = UvSprites
+		SpriteIndexIn = sprite_index
+		UvRectOut = uv_rect
+		TextureSize
+		{
+			X = 256
+			Y = 256
+		}
+		SpriteSize
+		{
+			X = 64
+			Y = 64
+		}
+		SpriteCount = 16
+		SpritesPerRow = 4
+		PixelOffset
+		{
+			X = 0
+			Y = 0
+		}
+		Name = "Sprite UV Rect"
+		Enabled = true
+		UpdateAfterInit = false
+	}
+	{
+		Type = SetRandom
+		DataOut = rot
+		ValueType = Angle
+		FromValue = 0d
+		ToValue = 360d
+		Name = Rotation
+		Enabled = true
+		UpdateAfterInit = false
+	}
+	]
 Updaters
 [
 	{
 		Type = Lifetime
 		EnergyInOut = energy
-		Lifetime = 0.5
+		Lifetime = 2
 		Name = Lifetime
 		Enabled = true
 		UpdateAfterInit = false
@@ -56,25 +129,13 @@ Updaters
 		UpdateAfterInit = false
 	}
 	{
-		Type = Lerp
-		LerpIn = life
-		DataOut = scale
-		Invert = false
-		ValueType = Float
-		FromValue = 1
-		ToValue = 0
-		Name = "Scale lerp"
-		Enabled = true
-		UpdateAfterInit = true
-	}
-	{
 		Type = Operator
-		DataType = Float
-		AIn = scale
-		BIn = base_scale
-		ResultOut = scale
-		Operator = Multiply
-		Name = "Apply base scale"
+		DataType = Angle
+		AIn = rot
+		BIn = rot_vel
+		ResultOut = rot
+		Operator = AddDt
+		Name = "Apply rot velocity."
 		Enabled = true
 		UpdateAfterInit = false
 	}
@@ -82,14 +143,14 @@ Updaters
 		Type = ColorRamp
 		LerpIn = life
 		ColorOut = color
-		Invert = true
+		Invert = false
 		Colors
 		[
 			{
 				Rf = 1
 				Gf = 1
 				Bf = 1
-				Af = 0
+				Af = 1
 			}
 			{
 				Rf = 1
@@ -103,21 +164,18 @@ Updaters
 				Bf = 1
 				Af = 0
 			}
-		]
-		Name = ""
+			]
+		Name = "Alpha ramp"
 		Enabled = true
-		UpdateAfterInit = true
+		UpdateAfterInit = false
 	}
-]
+	]
 Renderer
 {
 	Type = StandardQuadRenderer
 	LocationIn = location
-	ScaleIn = scale
-	RotationIn
-	
-	
-	
+	ScaleIn
+	RotationIn = rot
 	ColorIn = color
 	BaseSize
 	{
@@ -133,23 +191,22 @@ Renderer
 		Height = 1
 	}
 	Name = ""
-	UvRectIn
-
-
-
+	UvRectIn = uv_rect
 }
 Material
 {
 	Texture
 	{
-		File = "../Misc/blob.png"
+		File = debris.png
 		FixTransparentColors = false
 		PreMultiplyByAlpha = false
+		SampleMode = Point
+		MipLevels = 8
 	}
 	TargetBlendMode
 	{
 		SourceRgbFactor = SourceAlpha
-		DestRgbFactor = One
+		DestRgbFactor = InverseSourceAlpha
 		RgbOperator = Add
 		SourceAlphaFactor = InverseDestAlpha
 		DestAlphaFactor = One
@@ -167,12 +224,11 @@ Material
 	Color
 	{
 		Rf = 1
-		Gf = 0.392156869
-		Bf = 0
+		Gf = 1
+		Bf = 1
 		Af = 1
 	}
 }
 DeleteMode = Fast
 UpdatedEmittedParticles = false
 EnableMultithreading = false
-InitCapacity=500;

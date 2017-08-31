@@ -284,8 +284,8 @@ Part : /BASE_PART
 			FactorMediaEffectsIntensityWith = MainThruster
 			MediaEffects
 			[
-				&/PARTICLES/SmallThrusterTrail
-				&/PARTICLES/SmallThrusterGlow
+				&/PARTICLES/IonSmallThrusterTrail
+				&/PARTICLES/IonSmallThrusterGlow
 
 				: /SOUNDS/ThrusterRumble
 				{

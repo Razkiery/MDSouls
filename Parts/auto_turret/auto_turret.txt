@@ -221,14 +221,14 @@ Part : /BASE_PART
 			Type = TurretWeapon
 			Location = [0.5, 0.95]// Relative to upper-left corner of unrotated part.
 			Rotation = -90d// Relative to unrotated part.
-			FireInterval = .1
+			FireInterval = .15
 			FireDelay = 0
 			FiringArc = 130d
 			RotateSpeed = 85d
 			FireThresholdAngle = 1d
 			SpawnLoc = [1, 0]
 			AmmoStorage = BatteryStorage
-			AmmoUsed = 20
+			AmmoUsed = 10
 			TargetSearchTriesPerFrame = 1
 			AIFirepowerRating = 400
 			FireModeToggle = FireModeToggle
@@ -237,7 +237,7 @@ Part : /BASE_PART
 			{
 				Type = Bullet
 				Bullet = &<auto_turret_shot.txt>
-				Spread = [-5d, 5d]
+				Spread = [-3d, 3d]
 			}
 
 			CoverageSectorArc
@@ -252,7 +252,7 @@ Part : /BASE_PART
 		{
 			Type = TriggeredEffects
 			ChainedTo = Turret
-			Location = [0.6875, 0]
+			Location = [0.75, -0.03]
 			AnchorMediaEffects = true
 
 			MediaEffects
@@ -261,7 +261,7 @@ Part : /BASE_PART
 
 				: /SOUNDS/AudioExterior
 				{
-					Sound = "point_defense_shoot.wav"
+					Sound = "auto_turret_shoot.wav"
 					Volume = .25
 					SpeedVariation = .25
 				}
