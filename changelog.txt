@@ -6,6 +6,7 @@
 
 				-JohnStar145- 			(Tester-Discord)
 				-Skufl- 				(Tester-Discord)
+				-Sharario-              (Tester-Forum)
 
 				-Lafiel-				(Helper-Discord)
 				-Skynet- 				(Helper-Discord)
@@ -18,7 +19,7 @@
 				-[GWA] Alpha Reaper-	(Discord)			
 				-SrSky The Genocide- 	(Discord)
 				-dieaready- 			(Discord)
-				-"Star The Madman" 		(Discord)
+				-"Star The Madman"-		(Discord)
 								
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	V 0.0.1
@@ -234,7 +235,9 @@
  |FIX| - Decreased the PrerequisiteMetAmmo for the Shield Generator from 5001 to 1000
  |FIX| - Deleted the changelog from the mod.txt to has his own .txt file for a better changelog.
  |FIX| - Increased the Power Storage MaxAmmo from 11250 to vanilla (15000)
-			- FEATURE: Added new GUI icons for all the parts of the mods and changed by a tiers
+ |FIX| - Changed mod.txt version from 0.0.15 to 0.0.17 (Sharario - Forums)
+ |FIX| - is not really a fix... just a logo
+			- FEATURE: Added new GUI icons for all the parts of the mod and changed by a tiers
 			- FEATURE: Overrided the entire Bounty Mode for future updates
 			- FEATURE: Overrided the entire Galaxy Map for future updates
 			- |NEW DIFFICULTY ADDED!| -
@@ -253,4 +256,6 @@
 				- Ionic Reactor, makes ionic plasma fused cells.
 			- |NEW TYPE OF STORAGE ADDED!| -
 				- Ionic Storage, a better reinforced storage which can contains the ionic cells.
+			- |NEW PROPULSION ADDED!| -
+				- Ionic Thrusters. Better than the standard one in therms of energy efficiency and propulsion power.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

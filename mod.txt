@@ -1,6 +1,7 @@
 Name = "MD Souls"
 Version = 0.0.17
 Author = "Ryuuro"
+logo = "logo.png"
 Description = "Makes the game more difficult, use with caution!\n\n"\
               "<red>WARNING: Your computer and you may not be able to handle this difficult!</red>"
 
