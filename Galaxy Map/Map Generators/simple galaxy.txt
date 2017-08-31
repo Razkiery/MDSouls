@@ -1,0 +1,183 @@
+HexRadius = 300
+
+Spawners
+[
+	// Gold nebula.
+	{
+		Type = PerlinHexCells
+		HexRadius = &~/HexRadius
+		Styles = ["gold_cell"]
+		NoiseRange = [.65, 2]
+		NoiseFalloff = -1
+		NoiseFalloffRange = [190, 200]
+		PerlinNoise
+		{
+			GridSize = [30, 30]
+			Octaves = 2
+		}
+	}
+
+	// Blue nebula.
+	{
+		Type = PerlinHexCells
+		HexRadius = &~/HexRadius
+		Styles = ["blue_cell"]
+		NoiseRange = [0, .3]
+		NoiseFalloff = -1
+		NoiseFalloffRange = [190, 200]
+		PerlinNoise
+		{
+			GridSize = [30, 30]
+			Octaves = 3
+		}
+	}
+
+	// Red nebula.
+	{
+		Type = PerlinHexCells
+		HexRadius = &~/HexRadius
+		Styles = ["red_cell"]
+		NoiseRange = [.4, .8]
+		NoiseFalloff = -1
+		NoiseFalloffRange = [190, 200]
+		PerlinNoise
+		{
+			GridSize = [30, 30]
+			Octaves = 3
+		}
+	}
+
+	// Fill in remaining tiles with empty cells.
+	{
+		Type = HexCells
+		HexRadius = &~/HexRadius
+		Styles = ["empty_cell"]
+	}
+
+	: ~/Star
+	{
+		Count = 1
+		Distance = 0
+	}
+
+	: ~/Star
+	{
+		Count = 300
+		Distance = [20, 295]
+	}
+]
+
+Planet
+{
+	Type = Planet
+	NameGenerator = &<../Name Generators/celestial.txt>/Main
+}
+
+Star : Planet
+{
+	MinDistFromOtherObjects = 20
+	Styles = ["sun"]
+	Size = [1, 3.5]
+	IsLightSource = true
+	LightHeight = 3
+
+	SubSpawners
+	[
+		: ~/InnerPlanet
+		{
+			Count = [0, 10]
+		}
+
+		: ~/OuterPlanet
+		{
+			Count = [0, 10]
+		}
+	]
+}
+
+InnerPlanet : Planet
+{
+	Distance = [2.5, 5]
+	MinDistFromOtherObjects = 2.5
+	Styles
+	[
+		"terra"
+		"terra"
+		"barren"
+		"barren"
+		"barren"
+		"barren"
+		"alien"
+	]
+	Size = [.4, .6]
+	HasOrbit = true
+
+	SubSpawners
+	[
+		: ~/Moon
+		{
+			Count = [0, 3]
+			Distance = [.75, 1.5]
+		}
+
+		: ~/Node
+		{
+			Count = [0, 3]
+			Distance = [.31, .35]
+		}
+	]
+}
+
+OuterPlanet : Planet
+{
+	Distance = [5, 9]
+	MinDistFromOtherObjects = 4
+	Styles = ["gas"]
+	Size = [.8, 1]
+	HasOrbit = true
+
+	SubSpawners
+	[
+		: ~/Moon
+		{
+			Count = [0, 5]
+			Distance = [1, 2]
+		}
+
+		: ~/Node
+		{
+			Count = [0, 5]
+			Distance = [.51, .55]
+		}
+	]
+}
+
+Moon : Planet
+{
+	MinDistFromOtherObjects = .75
+	Styles
+	[
+		"rocky"
+		"rocky"
+		"rocky"
+		"lava"
+	]
+	Size = [.2, .3]
+	HasOrbit = true
+
+	SubSpawners
+	[
+		: ~/Node
+		{
+			Count = [0, 1]
+			Distance = [.16, .2]
+		}
+	]
+}
+
+Node
+{
+	Type = "Node"
+	MinDistFromOtherObjects = 0
+	HasOrbit = true// This is required to link nodes with their planets. No orbit will be rendered.
+}

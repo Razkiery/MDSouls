@@ -1,0 +1,1 @@
+AutoTurretShot  = &<../Effects/Particles/AutoTurret/auto_shot.txt>

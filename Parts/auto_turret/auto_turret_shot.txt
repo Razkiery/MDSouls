@@ -1,0 +1,146 @@
+ID = auto_turret_shot
+Range = 80
+IdealRange = 60
+Speed = 160
+
+Components
+{
+	Physics
+	{
+		Type = CirclePhysics
+		Radius = 0.01
+		Density = 0.1
+	}
+
+	Death
+	{
+		Type = DeathByLifetime
+		// Lifetime will be auto-calculated based on range and speed.
+	}
+
+	Sprite
+	{
+		Type = AnimatedSprite
+		Animation
+		{
+			AtlasSprite
+			{
+				Texture = "point_defense_shot.png"
+				Size = [8, .5]
+			}
+			FrameCount = 8
+			FrameSize = [128, 128]
+			FramesPerRow = 2
+			FramesPerSecond = 60
+		}
+	}
+
+	MediaEffects
+	{
+		Type = MediaEffects
+		InheritVelocityFrom = Physics
+		MediaEffects
+		[
+			&/PARTICLES/SmallLaserShotGlow
+		]
+	}
+
+	Hit
+	{
+		Type = PenetratingHit
+		PhysicsComponent = Physics
+
+		HitShield
+		{
+			HitEffects
+			[
+				{
+					Type = ShieldDamage
+					Damage = 10
+				}
+				{
+					Type = Impulse;
+					Impulse = 0;
+				}
+			]
+
+			MediaEffects = &../HitOperational/MediaEffects
+		}
+		HitOperational
+		{
+			HitEffects
+			[
+				{
+					Type = PartDamage
+					Damage = 10
+				}
+				{
+					Type = Impulse;
+					Impulse = 0;
+				}
+			]
+
+			MediaEffects
+			[
+				&/PARTICLES/SmallLaserHit
+				&/PARTICLES/SmallLaserFlash
+				&/PARTICLES/SmallLaserSparks
+
+				: /SOUNDS/AudioExterior
+				{
+					Sound = "point_defense_shoot.wav"
+					Volume = .4
+					SpeedVariation = .4
+				}
+
+				: /SHAKES/Shake
+				{
+					ShakeAmount = 0
+					Duration = 0
+				}
+			]
+		}
+		HitStructural
+		{
+			HitEffects
+			[
+				{
+					Type = PartDamage
+					Damage = 5
+				}
+				{
+					Type = Impulse;
+					Impulse = 0;
+				}
+			]
+
+			MediaEffects
+			[
+				&/PARTICLES/SmallLaserHitStruct
+
+				: /SOUNDS/AudioExterior
+				{
+					Sound = "point_defense_shoot.wav"
+					Volume = .3
+					SpeedVariation = .4
+				}
+			]
+		}
+		PenetratingOperational
+		{
+			// No effect.
+		}
+		PenetratingStructural
+		{
+			// No effect.
+		}
+		FinishedPenetratingOperational
+		{
+			// No effect.
+		}
+		FinishedPenetratingStructural
+		{
+			// No effect.
+		}
+	}
+}

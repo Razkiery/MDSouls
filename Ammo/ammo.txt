@@ -1,0 +1,19 @@
+IonBatteries
+{
+		ID = ionbattery
+		MaxCarried = 1000
+		CarriesMultiple = 1000
+		CarriedSprite
+		{
+			AnimationFiles
+			[
+				"ion_battery1.png"
+				"ion_battery2.png"
+				"ion_battery3.png"
+				"ion_battery4.png"
+			]
+			AnimationInterval = 0.15
+			Size = [1, 1]
+		}
+		CarriedSpriteOffset = [0, .25]
+}

@@ -3,7 +3,7 @@ Part : /BASE_PART
 	NameKey = "Parts/CarbonArmor"
 	IconNameKey = "Parts/CarbonArmorIcon"
 	IDString = carbonarmor
-	EditorGroup = "Defenses"
+	EditorGroup = "DefensesT2"
 	DescriptionKey = "Parts/CarbonArmorDesc"
 	Cost = 500
 	Size = [1, 1]

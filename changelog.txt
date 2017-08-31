@@ -1,0 +1,252 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	It's a work in progress mod (WIP) don't think is balanced right now, need a lot of test
+	and make some balance things. Just enjoy the mod and take care with pirates! Arrr!
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+										 SPECIAL THANKS TO:
+
+				-JohnStar145- 			(Tester-Discord)
+				-Skufl- 				(Tester-Discord)
+
+				-Lafiel-				(Helper-Discord)
+				-Skynet- 				(Helper-Discord)
+				-lVlemories- 			(Helper-Discord)
+				-Bubbet- 				(Helper-Discord)
+				-yoloberlin- 			(Helper-Forum)
+
+					-SHIP DESIGNERS-
+
+				-[GWA] Alpha Reaper-	(Discord)			
+				-SrSky The Genocide- 	(Discord)
+				-dieaready- 			(Discord)
+				-"Star The Madman" 		(Discord)
+								
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	V 0.0.1
+			- Start of the mod
+			- Changed the Money and fuel at start.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	V 0.0.2
+			- Added AI Changes to be more aggresive.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 	V 0.0.3
+			- Increased spawn and difficulty ships each map.
+			- Increased the reaction time of the ships and decreased distance between ships.
+			- Decreased the money you get each kill.
+			- Decreased the FTL fuel you get each kill.
+			- Changed AI to BountyBrainHardest (CustomAI)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	V 0.0.4
+			- Increased Galaxy to more big
+			- Increased Red, Yellow and blue nebulas to has more space for future things 
+			- Increased number of solar systems to 100
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	V 0.0.5
+			- Weapon Changes
+				- Decreased the ammo factory rate to 1 each second
+				- Ammo factory increased cost, decreased health points and decreased AI to attack it
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.6
+			- Weapon Changes
+				- All armor blocks increased Cost, decreased Health, decreased penetration resistance, flammable, density decreased, AoeDMG block decreased
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.7
+			- Big Cannon Bullet Changes
+				- Big Cannon Bullet = Decreased Range, Ideal Range and Speed of the bullet
+				- Big Cannon Bullet = Decreased Penetration and penetration speed
+				- Big Cannon Bullet = Decreased damage to shields
+				- Big Cannon Bullet = Decreased damage to armor
+				- Big Cannon Bullet = Decreased damage on penetration
+				- Big Cannon Bullet = Decreased damage on Operational rooms
+				- Big Cannon Bullet = Decreased fire chance
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.8
+|FIX|	- Increased the money and FTL each kill from 0.9 to 0.10 (Skufl test)
+			- Big Thruster Changes
+				- Big Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force, Increased Fuel Usage
+				- Big Thruster = Increased Minimal Power on the UI and increased the Ideal Power on the UI
+				- Big Thruster = Increased Minimal Crew on the UI and increased the Ideal Crew on the UI
+				- Big Thruster = Decreased the max ammo (battery)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.9
+			- Big Cannon Changes
+				- Big Cannon = Increased Cost, Decreased Health, Decreased Penetration Resistance, Increased focus of the AI
+				- Big Cannon = Increased the cost to shoot
+				- Big Cannon = Decreased the max ammo they had on the storage, increased the prerequiste to shoot and increased the to find more ammo
+				- Big Cannon Turret = Decreased the rotation speed, Fire speed and Rotate speed. Increased the AmmoUsed and firing Arc
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	V 0.0.10
+			- Bunk, Cockpit, Conveyor Belts, Corridor, Doors Changes
+				- Bunk = Increased Cost, Decreased Health, Decreased Penetration Resistance
+				- Bunk = Increased the crew idling for more time before needed	
+				- Cockpit = Increased Cost, Decreased Health, Increased the Selection Priority and Decreased the Penetration Resistance
+				- Cockpit = Decreased the Sight Radius
+				- Cockpit = Decreased the max ammo
+				- Cockpit = Decreased the max ammo and priority of ressuply
+				- Cockpit = Increased the quantity of ammo will need to run and the time for need to resuply
+				- Cockpit = The Crew leaves the room while on fire mode is active
+				- Conveyor belts = Increased Cost, Decreased Health and Decreased Penetration Resistance
+				- Conveyor belts = Decreased the speed on every side where the crew walks
+				- Conveyor belts = Decreased the speed on every side where the crew walks while congested
+				- Conveyor belts = Decreased the speed on every side where the crew walks while on fire
+				- Corridor = Increased Cost, Decreased Health, Decreased Penetration Resistance and decreased Crew Speed
+				- Doors = Increased Cost, Decreased the sell value
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	V 0.0.11
+			- Electro Bolt Shot, Electro Bolt, Fire Extinguiser, FTL Drive, Ion Beam, Medium Bullet, Medium Cannon, Medium Thruster Changes
+				- Electro Bolt Shot = Decreased Range, Decreased Ideal Range and Decreased traveling speed
+				- Electro Bolt Shot = Decreased Energy drained
+				- Electro Bolt Shot = Decreased damage to parts
+				- Electro Bolt Shot = Decreased damage to structural
+				- Electro Bolt = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+				- Electro Bolt = Decreased Max Ammo
+				- Electro Bolt = Decreased Fire Speed, Increased Firing Arc and Increased Ammo per shot
+				- Fire Extinguiser = Increased Cost, Decreased Health and Decreased Penetration Resistance
+				- Fire Extinguiser = Decreased Ammo
+				- Fire Extinguiser = Increased time to produce extinguisher
+				- FTL Drive = Increased Cost, Increased Selection priority, Decreased Health and Decreased Penetration Resistance
+				- FTL Drive = Increased the energy needed to jump
+				- FTL Drive = Decreased Fuel Capacity
+				- Ion Beam = Increased Cost, Decreased Health, Increased AI Value, Decreased Penetration Resistance
+				- Ion Beam = Decreased Max Ammo
+				- Ion Beam = Decreased Fire Speed, Increased Fire Delay, Increased Ammo Used, Increased Min Ammo Used
+				- Ion Beam = Decreased Range, Decreased Ideal Range, Decreased the Duration, Decreased Hit Interval
+				- Ion Beam = Decreased Damage to Shields
+				- Ion Beam = Decreased Damage to Parts
+				- Ion Beam = Decreased Damage to Structural
+				- Medium Bullet = Decreased Range, Decreased Ideal Range and Decreased Speed
+				- Medium Bullet = Decreased Penetration and Decreased
+				- Medium Bullet = Decreased Damage to Shields
+				- Medium Bullet = Decreased Damage to Parts
+				- Medium Bullet = Decreased Damage Penetrating Parts
+				- Medium Cannon = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI value
+				- Medium Cannon = Increased Delay on shot-to-shot
+				- Medium Cannon = Decreased the Max Ammo
+				- Medium Cannon = Decreased Fire Speed, Increased Firing Arc, Decreased Rotate Speed
+				- Medium Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force and Increased Fuel Usage
+				- Medium Thruster = Increased Minimal Crew on the UI and increased the Ideal Crew on the UI
+				- Medium Thruster = Increased Minimal Power on the UI and increased the Ideal Power on the UI
+				- Medium Thruster = Decreased the max ammo (battery)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.12
+|FIX|	- Ammo Factory = Increased time to make ammo from 0.75 to 1
+|FIX|	- Ammo Factory = Reduced the speed of .wav to syncronise to the process of ammo maker
+			- Missile Factory Changes
+				- Missile Factory = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI value
+				- Missile Factory = Decreased Max Ammo (Missile Parts)
+				- Missile Factory = Decreased Max Ammo (Battery)
+				- Missile Factory = Reduced the process to make ammo
+				- Missile Factory = Reduced the speed of .wav to syncronise to the process of ammo maker
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.13
+			- Galaxy Changes
+				- Galaxy = Increased the galaxy map on radious
+				- Galaxy Gold Nebula = Increased the range of Gold Nebula
+				- Galaxy Blue Nebula = Increased the range of Blue Nebula
+				- Galaxy Red Nebula = Increased the range of Red Nebula
+				- Galaxy Star = Increase the Amount of Stars
+				- Galaxy Star = Increases the InnerPlanet and randomize them
+				- Galaxy InnerPlanet = Increases the Moons and randomize them
+				- Galaxy InnerPlanet = Increases the Nodes and randomize them
+				- Galaxy OuterPlanet = Increases the Moons and randomize them
+				- Galaxy OuterPlanet = Increases the Nodes and randomize them
+				- Galaxy Camera = Increases the Camera zoom
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.14
+|FIX|	- Fixed the .zip file
+			- Tier difficulty Changes
+				- Increased the number of ships on each map to 16
+				- Increased Maximum distance where the ships will spawn on the map
+			- |COMUNITY SHIPS ADDED!| - 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.15
+|FIX|	- Increased the money at start from 15.000 to 20.000 (JohnStar145 Test)
+|FIX|	- Increased the money you get after kill from 0.10 to 0.105 
+|FIX|	- Increased the FTL you get after kill from 0.10 to 0.105 
+|FIX|	- Fixed the Multi-Link Downloads and increased to Mega.nz / Dropbox / Mediafire
+			- Missile, Missile Launcher, Missile Storage, Point Deffense, Power Storage, Quarters, Reactor, Sensor, Shield Generator, Small Laser Shot, Small Laser, Small Thruster, Structure
+				- Missile = Decreased Range, Decreased Ideal Range and Decreased Speed
+				- Missile = Decreased Turn Speed(Aiming) and Turn speed (How much time takes the Missile to rotate 360 degrees)
+				- Missile = Decreased Acceleration
+				- Missile = Decreased Life time of the Missile after launched
+				- Missile = Decreased Health of the Missile for point deffense
+				- Missile = Decreased Damage to shield
+				- Missile = Decreased Damage to Operational and Structural. Decreased Radius to Operational and Structural
+				- Missile Launcher = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+				- Missile Storage = Increased Cost, Decreased Max Health, Decreased Penetration Resistance and Increased AI Value
+				- Point Defense Shot = Decreased Range, Decreased Ideal Range and Decreased Speed
+				- Point Defense Shot = Decreased Damage to missiles
+				- Pont Defense = Decreased Fire Interval, Increased Fire Delay, Increased Firing Arc, Decreased Rotate Speed and Increased Ammo Used (Battery)
+				- Power Storage = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+				- Power Storage = Decreased Max Ammo (Battery)
+				- Quarters = Increased Cost, Decreased Health and Decreased Penetration Resistance
+				- Reactor = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+				- Reactor = Increased the time each battery is produced
+				- Sensor = Increased Cost, Decreased Health and Decreased Penetration Resistance
+				- Sensor = Decreased Max Ammo (Battery)
+				- Sensor = Increased Interval on how consumes Ammo (Battery)
+				- Sensor = Decreased Range of the Sensor
+				- Shield Generator = Increased Cost, Decreased Health, Decreased Penetration Resistance and Increased AI Value
+				- Shield Generator = Decreased Max Ammo (Battery)
+				- Shield Generator = Increased the Power Drain (Quantity)
+				- Small Laser Shot = Decreased Range, Decreased Ideal Range and Decreased Speed
+				- Small Laser Shot = Decreased Damage to Shields
+				- Small Laser Shot = Decreased Damage to Operational Rooms
+				- Small Laser Shot = Decreased Damage to Structural
+				- Small Laser = Increased Cost, Decreased Health, Decreased Penetration Resistance, Increased AI Value
+				- Small Laser = Decreased Max Ammo
+				- Small Laser = Decreased Fire Interval, Increased Fire Delay, Increased Firing Arc, Decreased Rotate Speed and Increased Ammo Used (Battery)
+				- Small Thruster = Increased Cost, Decreased Health, Decreased Penetration Resistance, Decreased Thruster Force and Increased Fuel Ussage (Battery)
+				- Small Thruster = Decreased Max Ammo (Battery)
+				- Structure = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+				- Structure Wedge = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+				- Structure Wedge L= Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+				- Structure Wedge R = Increased Cost, Decreased Health, Flammable and Decreased Speed of the Crew
+				- Wall Hole = Increased Cost and Can Be Buildable
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.16
+|FIX|	- Added to GitHub for a better modding and changelog
+			- |NEW LASER TYPE ADDED!| - 
+				- Added Large Laser:
+					- Do more damage to all parts than the standard laser
+					- Has more range than the standard laser
+					- Shoots slower than the standard laser
+					- Cost more than the standard laser
+					- Has more HP than the standard laser
+					- Has more AI value than the standard laser
+			- |NEW CONVEYOR TYPE ADDED!| - 
+				- Added Fast Conveyor:
+					- The crew moves faster to each side than the normal conveyor
+					- Has more HP than the normal conveyor
+					- Cost more than the normal conveyor
+			- |NEW CONVEYOR TYPE ADDED!| - 
+				- Added Faster Conveyor:
+					- The Crew moves faster to each side than the fast conveyor
+					- Has more HP than the fast conveyor
+					- Cost more than the fast conveyor
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ V 0.0.17
+ |FIX| - Fixed a mistake where the Armor has 0.55 of AreaDamageBlockFactor and changed to 0.15
+ |FIX| - Changed the starter ship into other little better than the standard one
+ |FIX| - Increased the EnemyCloseNoBuildRadius from 350 to 550
+ |FIX| - Increased the EnemyCombatNoBuildDuration from 5 to 15
+ |FIX| - Increased the MoneyCostPerFuel from 500 to 550
+ |FIX| - Increased the MaxBountySpawnDistanceFromPlayer from 4000 to 5000
+ |FIX| - Decreased the PrerequisiteMetAmmo for the Shield Generator from 5001 to 1000
+ |FIX| - Deleted the changelog from the mod.txt to has his own .txt file for a better changelog.
+ |FIX| - Increased the Power Storage MaxAmmo from 11250 to vanilla (15000)
+			- FEATURE: Added new GUI icons for all the parts of the mods and changed by a tiers
+			- FEATURE: Overrided the entire Bounty Mode for future updates
+			- FEATURE: Overrided the entire Galaxy Map for future updates
+			- |NEW ARMOR TYPE ADDED!| -
+				- Carbonic armor added:
+					- 25% Better stats than the Standard armor -
+			- |NEW LASER TYPE ADDED!| -
+				- Auto Turret:
+					- An automatic laser which fires to the ship with a basic AI
+			- |NEW TYPE OF ENERGY ADDED!| -
+				- Ionic energy. Better than the batterys with a plus of eficiency and power. Works only with weapons of tier 2 and propulsion of tier 1.
+			- |NEW TYPE OF REACTOR ADDED!| -
+				- Ionic Reactor, makes ionic plasma fused cells.
+			- |NEW TYPE OF STORAGE ADDED!| -
+				- Ionic Storage, a better reinforced storage which can contains the ionic cells.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

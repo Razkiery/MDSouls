@@ -1,0 +1,70 @@
+Main
+{
+	Type = Multi
+	SubGenerators
+	[
+		{
+			Generator = &~/Prefixes
+			Chance = .5
+		}
+		{
+			Generator = &~/LatinMarkov
+			Chance = 1
+		}
+		{
+			Generator = &~/Suffixes
+			Chance = .5
+		}
+	]
+}
+
+Prefixes
+{
+	Type = NameList
+	Names
+	[
+		"New"
+		"Alpha"
+		"Beta"
+		"Gamma"
+		"Epsilon"
+		"Zeta"
+		"Eta"
+		"Theta"
+		"Kappa"
+		"Sigma"
+		"Tau"
+		"Phi"
+		"Omega"
+	]
+}
+
+LatinMarkov
+{
+	Type = Markov
+	MarkovChain = &<markov_latin.txt>
+	MinLength = 6
+	MaxLength = 10
+	MaxConsecutiveConsonants = 3
+}
+
+Suffixes
+{
+	Type = NameList
+	Names
+	[
+		"I"
+		"II"
+		"III"
+		"IV"
+		"V"
+		"VI"
+		"VII"
+		"VIII"
+		"IX"
+		"X"
+		"XI"
+		"XII"
+		"Prime"
+	]
+}

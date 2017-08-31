@@ -234,4 +234,14 @@ BountyShips
 	{	BaseValue = 99500
 		DesignedShip = "Ships/Duttyfly1/SF-1 MK2.ship.png"
 	}
+	//Dieaready's Ships
+	{	BaseValue = 4194950
+		DesignedShip = "Ships/dieaready/Behemoth_MK3C3.ship.png"
+	}
+	{	BaseValue = 4723550
+		DesignedShip = "Ships/dieaready/Hellspawn_Medium_Carrier_MK2.ship.png"
+	}
+	{	BaseValue = 4723550
+		DesignedShip = "Ships/dieaready/Hellspawn_Medium_Carrier_MK3.ship.png"
+	}
 ]

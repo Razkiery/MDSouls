@@ -1,0 +1,44 @@
+DefensesT2
+{
+	NameKey = "EditorGroups/DefensesT2"
+	Icon
+	{
+		Texture = "group_defensesT2.png"
+	}
+}
+
+WeaponsT2
+{
+	NameKey = "EditorGroups/WeaponsT2"
+	Icon
+	{
+		Texture = "group_weaponsT2.png"
+	}
+}
+
+CrewT2
+{
+	NameKey = "EditorGroups/CrewT2"
+	Icon
+	{
+		Texture = "group_crewT2.png"
+	}
+}
+
+FlightT2
+{
+	NameKey = "EditorGroups/FlightT2"
+	Icon
+	{
+		Texture = "group_flightT2.png"
+	}
+}
+
+PowerT2
+{
+	NameKey = "EditorGroups/PowerT2"
+	Icon
+	{
+		Texture = "group_powerT2.png"
+	}
+}

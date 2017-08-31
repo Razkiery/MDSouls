@@ -3,7 +3,7 @@ Part : /BASE_PART
 	NameKey = "Parts/CarbonArmor2"
 	IconNameKey = "Parts/CarbonArmor2Icon"
 	IDString = carbonarmor2
-	EditorGroup = "Defenses"
+	EditorGroup = "DefensesT2"
 	EditorReplacementPartID = armor
 	DescriptionKey = "Parts/CarbonArmor2Desc"
 	Cost = 950

@@ -3,7 +3,7 @@ Part : /BASE_PART
 	NameKey = "Parts/FastConveyor"
 	IconNameKey = "Parts/FastConveyorIcon"
 	IDString = fastconveyor
-	EditorGroup = "Crew"
+	EditorGroup = "CrewT2"
 	DescriptionKey = "Parts/FastConveyorDesc"
 	Cost = 300
 	Size = [1, 1]

@@ -1,9 +1,47 @@
 CommunityShipsLibrary = "Community Ships";
-Parts
+BountyMode
 {
+	ThreatLevels
+	[
+		"<color r=\"255\" g=\"255\" b=\"0\">Amateur</color>"
+		"<color r=\"255\" g=\"191\" b=\"0\">Professional</color>"
+		"<color r=\"255\" g=\"127\" b=\"0\">Veteran</color>"
+		"<color r=\"255\" g=\"63\" b=\"0\">Elite</color>"
+		"<color r=\"255\" g=\"0\" b=\"0\">Vanguard</color>"
+		"<color r=\"255\" g=\"0\" b=\"0\">Pirates</color>"
+		"<color r=\"255\" g=\"0\" b=\"0\">Redeemers</color>"
+	]
+}
+
+EditorGroups
+{
+	Weapons = "Weapons"
+	WeaponsT2 = "Weapons Tier 2"
+	Munitions = "Munitions"
+	Defenses = "Defenses"
+	DefensesT2 = "Defenses Tier 2"
+	Flight = "Flight"
+	FlightT2 = "Flight Tier 2"
+	Crew = "Crew"
+	CrewT2 = "Crew Tier 2"
+	Power = "Power"
+	PowerT2 = "Power Tier 2"
+	Misc = "Miscellaneous"
+}
+
+Parts
+{	
+	//Weapons
+	
 	LargeLaser = "Large Laser"
 	LargeLaserIcon = "Lar. Laser"
 	LargeLaserDesc = "Provides a better damage than the standard one at more cost and slower fire rate."
+	
+	AutoTurret = "Automatic Turret"
+	AutoTurretIcon = "Auto. Turret"
+	AutoTurretDesc = "An automatic turret that shoots with a basic AI"
+	
+	//Crew
 	
 	FastConveyor = "Fast Conveyor"
 	FastConveyorIcon = "Fast Conveyor"
@@ -12,6 +50,8 @@ Parts
 	FasterConveyor = "Faster Conveyor"
 	FasterConveyorIcon = "Faster Conveyor"
 	FasterConveyorDesc = "Gives to your crew members the faster boost with this!"
+	
+	//Armor
 	
 	CarbonArmor = "Carbonic Armor"
 	CarbonArmorIcon = "Carb. Armor"
@@ -33,7 +73,23 @@ Parts
 	CarbonArmor2WedgeRIcon = "Carb. Armor 1x2 (R)"
 	CarbonArmor2WedgeRDesc =  &CarbonArmorDesc
 	
-	CarbonArmorTri =  "Carbonic armor triangular"
+	CarbonArmorTri =  "Carbonic Armor triangular"
 	CarbonArmorTriIcon = "Carb. Armor Triangle"
 	CarbonArmorTriDesc = &CarbonArmorDesc
+	
+	//Flight
+	
+	IonThruster = "Ionic Thruster"
+	IonThrusterIcon = "Ion Thrust."
+	IonThrusterDesc = "A better type of propulsion than the standard one, uses Ionic solution instead of a battery"
+	
+	//Power
+	
+	IonReactor = "Ion Reactor"
+	IonReactorIcon = "Ion React."
+	IonReactorDesc = "While our scientist was trying to find an energy more powerful, they found other composite: an Ionic plasmatic solution made by electrified ions fused with plasma."
+	
+	IonPowerStorage = "Ion Storage"
+	IonPowerStorageIcon = "Ion Stor."
+	IonPowerStorageDesc = &IonReactorDesc
 }

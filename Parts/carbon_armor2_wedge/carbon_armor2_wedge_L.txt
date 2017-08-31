@@ -3,7 +3,7 @@ Part : /BASE_PART
 	NameKey = "Parts/CarbonArmor2WedgeL"
 	IconNameKey = "Parts/CarbonArmor2WedgeLIcon"
 	IDString = Carbonarmor2_wedge_L
-	EditorGroup = "Defenses"
+	EditorGroup = "DefensesT2"
 	DescriptionKey = "Parts/CarbonArmor2WedgeLDesc"
 	EditorReplacementPartID = ""
 	Cost = 500

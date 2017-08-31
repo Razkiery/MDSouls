@@ -1,0 +1,206 @@
+StartingMoney = 20000
+StartingFuel = 100
+StartingShip = "../Misc Ships/Starter2.ship.png"
+EnemyCloseNoBuildRadius = 550
+EnemyCombatNoBuildDuration = 15
+MoneyCostPerFuel = 550
+
+BaseThreatLevel
+{
+	MinBountySpawnDistanceFromPlayer = 50
+	MaxBountySpawnDistanceFromPlayer = 5000
+	MinDistanceBetweenBounties = 250
+	RewardMoneyAsFractionOfShipValue = .105
+	RewardFuelAsFractionOfShipMass = .105
+	BountyShipAI = "BountyBrainHard"
+
+	ThreatLevelSpriteOffset = [-.2, -.2]
+}
+
+ThreatLevels
+[
+	// 0
+	: ~/BaseThreatLevel
+	{
+		NameKey = "BountyMode/ThreatLevels/0"
+
+		TiersToSpawn = [2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4]
+		TiersToSpawnIfStartingNode = [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3]
+		BountyShipAI = "BountyBrain"
+
+		ThreatLevelSprite
+		{
+			Texture = "rank_1.png"
+			Size = [.2, .2]
+		}
+		FlyOutThreatLevelSprite
+		{
+			Texture = "rank_1.png"
+			Size = [32, 32]
+		}
+	}
+
+	// 1
+	: ~/BaseThreatLevel
+	{
+		NameKey = "BountyMode/ThreatLevels/1"
+
+		TiersToSpawn = [3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5]
+
+		ThreatLevelSprite
+		{
+			Texture = "rank_2.png"
+			Size = [.2, .2]
+		}
+		FlyOutThreatLevelSprite
+		{
+			Texture = "rank_2.png"
+			Size = [32, 32]
+		}
+	}
+
+	// 2
+	: ~/BaseThreatLevel
+	{
+		NameKey = "BountyMode/ThreatLevels/2"
+
+		TiersToSpawn = [4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6]
+
+		ThreatLevelSprite
+		{
+			Texture = "rank_3.png"
+			Size = [.2, .2]
+		}
+		FlyOutThreatLevelSprite
+		{
+			Texture = "rank_3.png"
+			Size = [32, 32]
+		}
+	}
+
+	// 3
+	: ~/BaseThreatLevel
+	{
+		NameKey = "BountyMode/ThreatLevels/3"
+
+		TiersToSpawn = [6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8]
+
+		ThreatLevelSprite
+		{
+			Texture = "rank_4.png"
+			Size = [.2, .2]
+		}
+		FlyOutThreatLevelSprite
+		{
+			Texture = "rank_4.png"
+			Size = [32, 32]
+		}
+	}
+
+	// 4
+	: ~/BaseThreatLevel
+	{
+		NameKey = "BountyMode/ThreatLevels/4"
+
+		TiersToSpawn = [8, 8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9]
+
+		ThreatLevelSprite
+		{
+			Texture = "rank_5.png"
+			Size = [.2, .2]
+		}
+		FlyOutThreatLevelSprite
+		{
+			Texture = "rank_5.png"
+			Size = [32, 32]
+		}
+	}
+	
+	// 5
+	: ~/BaseThreatLevel
+	{
+		NameKey = "BountyMode/ThreatLevels/5"
+
+		TiersToSpawn = [10]
+
+		ThreatLevelSprite
+		{
+			Texture = "rank_6.png"
+			Size = [.2, .2]
+		}
+		FlyOutThreatLevelSprite
+		{
+			Texture = "rank_6.png"
+			Size = [32, 32]
+		}
+	}
+]
+
+Tiers
+[
+	// 0
+	{
+		MinBountyBaseValue = 0
+		MaxBountyBasevalue = 55000
+	}
+
+	// 1
+	{
+		MinBountyBaseValue = 55001
+		MaxBountyBasevalue = 75000
+	}
+
+	// 2
+	{
+		MinBountyBaseValue = 75001
+		MaxBountyBasevalue = 110000
+	}
+
+	// 3
+	{
+		MinBountyBaseValue = 110001
+		MaxBountyBasevalue = 165000
+	}
+
+	// 4
+	{
+		MinBountyBaseValue = 165001
+		MaxBountyBasevalue = 250000
+	}
+
+	// 5
+	{
+		MinBountyBaseValue = 250001
+		MaxBountyBasevalue = 375000
+	}
+
+	// 6
+	{
+		MinBountyBaseValue = 375001
+		MaxBountyBasevalue = 550000
+	}
+
+	// 7
+	{
+		MinBountyBaseValue = 550001
+		MaxBountyBasevalue = 825000
+	}
+
+	// 8
+	{
+		MinBountyBaseValue = 825001
+		MaxBountyBasevalue = 1200000
+	}
+
+	// 9
+	{
+		MinBountyBaseValue = 1200001
+		MaxBountyBasevalue = 3000000
+	}
+	
+	//10
+	{
+		MinBountyBaseValue = 3000001
+		MaxBountyBaseValue = 6000000
+	}
+]

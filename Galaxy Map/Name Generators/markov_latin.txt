@@ -1,0 +1,1629 @@
+Order = 1
+Frequencies
+[
+	{
+		Key
+		[
+			0
+		]
+		Value
+		[
+			{
+				Key = 97
+				Value = 292
+			}
+			{
+				Key = 101
+				Value = 218
+			}
+			{
+				Key = 104
+				Value = 83
+			}
+			{
+				Key = 98
+				Value = 30
+			}
+			{
+				Key = 109
+				Value = 212
+			}
+			{
+				Key = 111
+				Value = 103
+			}
+			{
+				Key = 99
+				Value = 431
+			}
+			{
+				Key = 105
+				Value = 414
+			}
+			{
+				Key = 113
+				Value = 154
+			}
+			{
+				Key = 100
+				Value = 243
+			}
+			{
+				Key = 116
+				Value = 190
+			}
+			{
+				Key = 102
+				Value = 150
+			}
+			{
+				Key = 112
+				Value = 639
+			}
+			{
+				Key = 108
+				Value = 221
+			}
+			{
+				Key = 103
+				Value = 37
+			}
+			{
+				Key = 121
+				Value = 1
+			}
+			{
+				Key = 114
+				Value = 143
+			}
+			{
+				Key = 117
+				Value = 57
+			}
+			{
+				Key = 106
+				Value = 7
+			}
+			{
+				Key = 115
+				Value = 323
+			}
+			{
+				Key = 110
+				Value = 110
+			}
+			{
+				Key = 118
+				Value = 172
+			}
+			{
+				Key = 119
+				Value = 1
+			}
+			{
+				Key = 120
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			97
+		]
+		Value
+		[
+			{
+				Key = 98
+				Value = 79
+			}
+			{
+				Key = 115
+				Value = 126
+			}
+			{
+				Key = 116
+				Value = 246
+			}
+			{
+				Key = 0
+				Value = 312
+			}
+			{
+				Key = 110
+				Value = 142
+			}
+			{
+				Key = 99
+				Value = 135
+			}
+			{
+				Key = 100
+				Value = 78
+			}
+			{
+				Key = 109
+				Value = 122
+			}
+			{
+				Key = 117
+				Value = 53
+			}
+			{
+				Key = 102
+				Value = 6
+			}
+			{
+				Key = 101
+				Value = 141
+			}
+			{
+				Key = 103
+				Value = 35
+			}
+			{
+				Key = 105
+				Value = 9
+			}
+			{
+				Key = 108
+				Value = 107
+			}
+			{
+				Key = 114
+				Value = 136
+			}
+			{
+				Key = 118
+				Value = 28
+			}
+			{
+				Key = 112
+				Value = 37
+			}
+			{
+				Key = 113
+				Value = 5
+			}
+			{
+				Key = 120
+				Value = 17
+			}
+			{
+				Key = 104
+				Value = 5
+			}
+		]
+	}
+	{
+		Key
+		[
+			98
+		]
+		Value
+		[
+			{
+				Key = 98
+				Value = 4
+			}
+			{
+				Key = 97
+				Value = 18
+			}
+			{
+				Key = 100
+				Value = 3
+			}
+			{
+				Key = 101
+				Value = 69
+			}
+			{
+				Key = 115
+				Value = 15
+			}
+			{
+				Key = 117
+				Value = 35
+			}
+			{
+				Key = 105
+				Value = 68
+			}
+			{
+				Key = 111
+				Value = 41
+			}
+			{
+				Key = 108
+				Value = 12
+			}
+			{
+				Key = 114
+				Value = 25
+			}
+			{
+				Key = 116
+				Value = 2
+			}
+			{
+				Key = 118
+				Value = 5
+			}
+			{
+				Key = 0
+				Value = 2
+			}
+			{
+				Key = 106
+				Value = 1
+			}
+			{
+				Key = 110
+				Value = 1
+			}
+			{
+				Key = 112
+				Value = 2
+			}
+			{
+				Key = 103
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			115
+		]
+		Value
+		[
+			{
+				Key = 0
+				Value = 1199
+			}
+			{
+				Key = 99
+				Value = 135
+			}
+			{
+				Key = 101
+				Value = 134
+			}
+			{
+				Key = 111
+				Value = 71
+			}
+			{
+				Key = 113
+				Value = 9
+			}
+			{
+				Key = 116
+				Value = 220
+			}
+			{
+				Key = 117
+				Value = 243
+			}
+			{
+				Key = 97
+				Value = 64
+			}
+			{
+				Key = 105
+				Value = 167
+			}
+			{
+				Key = 115
+				Value = 84
+			}
+			{
+				Key = 112
+				Value = 51
+			}
+			{
+				Key = 118
+				Value = 1
+			}
+			{
+				Key = 110
+				Value = 4
+			}
+			{
+				Key = 109
+				Value = 7
+			}
+			{
+				Key = 108
+				Value = 3
+			}
+			{
+				Key = 121
+				Value = 1
+			}
+			{
+				Key = 102
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			116
+		]
+		Value
+		[
+			{
+				Key = 105
+				Value = 383
+			}
+			{
+				Key = 117
+				Value = 499
+			}
+			{
+				Key = 101
+				Value = 287
+			}
+			{
+				Key = 111
+				Value = 255
+			}
+			{
+				Key = 97
+				Value = 211
+			}
+			{
+				Key = 114
+				Value = 136
+			}
+			{
+				Key = 116
+				Value = 23
+			}
+			{
+				Key = 0
+				Value = 51
+			}
+			{
+				Key = 113
+				Value = 4
+			}
+			{
+				Key = 115
+				Value = 3
+			}
+			{
+				Key = 104
+				Value = 19
+			}
+			{
+				Key = 99
+				Value = 2
+			}
+			{
+				Key = 108
+				Value = 1
+			}
+			{
+				Key = 112
+				Value = 3
+			}
+			{
+				Key = 121
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			105
+		]
+		Value
+		[
+			{
+				Key = 115
+				Value = 366
+			}
+			{
+				Key = 97
+				Value = 128
+			}
+			{
+				Key = 100
+				Value = 110
+			}
+			{
+				Key = 116
+				Value = 308
+			}
+			{
+				Key = 112
+				Value = 46
+			}
+			{
+				Key = 111
+				Value = 300
+			}
+			{
+				Key = 101
+				Value = 72
+			}
+			{
+				Key = 114
+				Value = 55
+			}
+			{
+				Key = 0
+				Value = 183
+			}
+			{
+				Key = 99
+				Value = 179
+			}
+			{
+				Key = 103
+				Value = 68
+			}
+			{
+				Key = 109
+				Value = 158
+			}
+			{
+				Key = 110
+				Value = 419
+			}
+			{
+				Key = 117
+				Value = 204
+			}
+			{
+				Key = 102
+				Value = 24
+			}
+			{
+				Key = 118
+				Value = 36
+			}
+			{
+				Key = 105
+				Value = 8
+			}
+			{
+				Key = 113
+				Value = 21
+			}
+			{
+				Key = 108
+				Value = 143
+			}
+			{
+				Key = 98
+				Value = 55
+			}
+			{
+				Key = 120
+				Value = 13
+			}
+			{
+				Key = 104
+				Value = 3
+			}
+		]
+	}
+	{
+		Key
+		[
+			100
+		]
+		Value
+		[
+			{
+				Key = 117
+				Value = 106
+			}
+			{
+				Key = 111
+				Value = 164
+			}
+			{
+				Key = 105
+				Value = 224
+			}
+			{
+				Key = 97
+				Value = 39
+			}
+			{
+				Key = 100
+				Value = 5
+			}
+			{
+				Key = 101
+				Value = 204
+			}
+			{
+				Key = 102
+				Value = 6
+			}
+			{
+				Key = 104
+				Value = 2
+			}
+			{
+				Key = 109
+				Value = 8
+			}
+			{
+				Key = 110
+				Value = 3
+			}
+			{
+				Key = 115
+				Value = 7
+			}
+			{
+				Key = 118
+				Value = 6
+			}
+			{
+				Key = 0
+				Value = 19
+			}
+			{
+				Key = 116
+				Value = 1
+			}
+			{
+				Key = 99
+				Value = 1
+			}
+			{
+				Key = 114
+				Value = 8
+			}
+		]
+	}
+	{
+		Key
+		[
+			117
+		]
+		Value
+		[
+			{
+				Key = 99
+				Value = 59
+			}
+			{
+				Key = 115
+				Value = 801
+			}
+			{
+				Key = 101
+				Value = 84
+			}
+			{
+				Key = 109
+				Value = 480
+			}
+			{
+				Key = 110
+				Value = 116
+			}
+			{
+				Key = 116
+				Value = 94
+			}
+			{
+				Key = 105
+				Value = 102
+			}
+			{
+				Key = 103
+				Value = 32
+			}
+			{
+				Key = 118
+				Value = 11
+			}
+			{
+				Key = 111
+				Value = 100
+			}
+			{
+				Key = 108
+				Value = 187
+			}
+			{
+				Key = 114
+				Value = 121
+			}
+			{
+				Key = 100
+				Value = 71
+			}
+			{
+				Key = 117
+				Value = 28
+			}
+			{
+				Key = 97
+				Value = 117
+			}
+			{
+				Key = 102
+				Value = 4
+			}
+			{
+				Key = 120
+				Value = 14
+			}
+			{
+				Key = 112
+				Value = 59
+			}
+			{
+				Key = 0
+				Value = 13
+			}
+			{
+				Key = 98
+				Value = 38
+			}
+		]
+	}
+	{
+		Key
+		[
+			99
+		]
+		Value
+		[
+			{
+				Key = 111
+				Value = 389
+			}
+			{
+				Key = 105
+				Value = 218
+			}
+			{
+				Key = 0
+				Value = 38
+			}
+			{
+				Key = 99
+				Value = 25
+			}
+			{
+				Key = 101
+				Value = 140
+			}
+			{
+				Key = 117
+				Value = 206
+			}
+			{
+				Key = 113
+				Value = 3
+			}
+			{
+				Key = 115
+				Value = 1
+			}
+			{
+				Key = 116
+				Value = 148
+			}
+			{
+				Key = 97
+				Value = 89
+			}
+			{
+				Key = 104
+				Value = 17
+			}
+			{
+				Key = 108
+				Value = 25
+			}
+			{
+				Key = 114
+				Value = 58
+			}
+			{
+				Key = 100
+				Value = 1
+			}
+			{
+				Key = 110
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			111
+		]
+		Value
+		[
+			{
+				Key = 0
+				Value = 1268
+			}
+			{
+				Key = 110
+				Value = 235
+			}
+			{
+				Key = 114
+				Value = 363
+			}
+			{
+				Key = 109
+				Value = 124
+			}
+			{
+				Key = 100
+				Value = 44
+			}
+			{
+				Key = 118
+				Value = 34
+			}
+			{
+				Key = 112
+				Value = 64
+			}
+			{
+				Key = 99
+				Value = 69
+			}
+			{
+				Key = 116
+				Value = 62
+			}
+			{
+				Key = 115
+				Value = 117
+			}
+			{
+				Key = 113
+				Value = 11
+			}
+			{
+				Key = 108
+				Value = 120
+			}
+			{
+				Key = 98
+				Value = 30
+			}
+			{
+				Key = 120
+				Value = 8
+			}
+			{
+				Key = 103
+				Value = 28
+			}
+			{
+				Key = 97
+				Value = 4
+			}
+			{
+				Key = 101
+				Value = 10
+			}
+			{
+				Key = 104
+				Value = 9
+			}
+			{
+				Key = 117
+				Value = 3
+			}
+			{
+				Key = 105
+				Value = 6
+			}
+			{
+				Key = 102
+				Value = 23
+			}
+		]
+	}
+	{
+		Key
+		[
+			101
+		]
+		Value
+		[
+			{
+				Key = 111
+				Value = 162
+			}
+			{
+				Key = 110
+				Value = 334
+			}
+			{
+				Key = 0
+				Value = 236
+			}
+			{
+				Key = 114
+				Value = 585
+			}
+			{
+				Key = 100
+				Value = 93
+			}
+			{
+				Key = 112
+				Value = 97
+			}
+			{
+				Key = 115
+				Value = 270
+			}
+			{
+				Key = 109
+				Value = 119
+			}
+			{
+				Key = 99
+				Value = 174
+			}
+			{
+				Key = 103
+				Value = 58
+			}
+			{
+				Key = 116
+				Value = 135
+			}
+			{
+				Key = 117
+				Value = 24
+			}
+			{
+				Key = 113
+				Value = 42
+			}
+			{
+				Key = 120
+				Value = 126
+			}
+			{
+				Key = 108
+				Value = 120
+			}
+			{
+				Key = 97
+				Value = 17
+			}
+			{
+				Key = 98
+				Value = 17
+			}
+			{
+				Key = 104
+				Value = 10
+			}
+			{
+				Key = 102
+				Value = 45
+			}
+			{
+				Key = 118
+				Value = 53
+			}
+			{
+				Key = 105
+				Value = 11
+			}
+			{
+				Key = 101
+				Value = 2
+			}
+		]
+	}
+	{
+		Key
+		[
+			110
+		]
+		Value
+		[
+			{
+				Key = 100
+				Value = 127
+			}
+			{
+				Key = 115
+				Value = 184
+			}
+			{
+				Key = 116
+				Value = 230
+			}
+			{
+				Key = 118
+				Value = 21
+			}
+			{
+				Key = 105
+				Value = 175
+			}
+			{
+				Key = 101
+				Value = 110
+			}
+			{
+				Key = 117
+				Value = 131
+			}
+			{
+				Key = 103
+				Value = 45
+			}
+			{
+				Key = 111
+				Value = 123
+			}
+			{
+				Key = 97
+				Value = 96
+			}
+			{
+				Key = 0
+				Value = 25
+			}
+			{
+				Key = 99
+				Value = 77
+			}
+			{
+				Key = 110
+				Value = 12
+			}
+			{
+				Key = 113
+				Value = 14
+			}
+			{
+				Key = 98
+				Value = 1
+			}
+			{
+				Key = 109
+				Value = 1
+			}
+			{
+				Key = 102
+				Value = 90
+			}
+			{
+				Key = 114
+				Value = 3
+			}
+			{
+				Key = 120
+				Value = 2
+			}
+		]
+	}
+	{
+		Key
+		[
+			114
+		]
+		Value
+		[
+			{
+				Key = 98
+				Value = 30
+			}
+			{
+				Key = 103
+				Value = 37
+			}
+			{
+				Key = 0
+				Value = 315
+			}
+			{
+				Key = 118
+				Value = 24
+			}
+			{
+				Key = 111
+				Value = 333
+			}
+			{
+				Key = 97
+				Value = 218
+			}
+			{
+				Key = 105
+				Value = 281
+			}
+			{
+				Key = 115
+				Value = 59
+			}
+			{
+				Key = 116
+				Value = 95
+			}
+			{
+				Key = 101
+				Value = 345
+			}
+			{
+				Key = 117
+				Value = 152
+			}
+			{
+				Key = 110
+				Value = 28
+			}
+			{
+				Key = 100
+				Value = 22
+			}
+			{
+				Key = 99
+				Value = 36
+			}
+			{
+				Key = 109
+				Value = 34
+			}
+			{
+				Key = 120
+				Value = 1
+			}
+			{
+				Key = 108
+				Value = 2
+			}
+			{
+				Key = 112
+				Value = 10
+			}
+			{
+				Key = 114
+				Value = 40
+			}
+			{
+				Key = 113
+				Value = 4
+			}
+			{
+				Key = 102
+				Value = 12
+			}
+			{
+				Key = 121
+				Value = 1
+			}
+			{
+				Key = 104
+				Value = 2
+			}
+		]
+	}
+	{
+		Key
+		[
+			113
+		]
+		Value
+		[
+			{
+				Key = 117
+				Value = 280
+			}
+		]
+	}
+	{
+		Key
+		[
+			103
+		]
+		Value
+		[
+			{
+				Key = 111
+				Value = 86
+			}
+			{
+				Key = 101
+				Value = 59
+			}
+			{
+				Key = 114
+				Value = 52
+			}
+			{
+				Key = 103
+				Value = 3
+			}
+			{
+				Key = 110
+				Value = 43
+			}
+			{
+				Key = 105
+				Value = 44
+			}
+			{
+				Key = 97
+				Value = 29
+			}
+			{
+				Key = 117
+				Value = 32
+			}
+			{
+				Key = 108
+				Value = 4
+			}
+		]
+	}
+	{
+		Key
+		[
+			109
+		]
+		Value
+		[
+			{
+				Key = 0
+				Value = 511
+			}
+			{
+				Key = 109
+				Value = 43
+			}
+			{
+				Key = 111
+				Value = 136
+			}
+			{
+				Key = 112
+				Value = 105
+			}
+			{
+				Key = 105
+				Value = 154
+			}
+			{
+				Key = 97
+				Value = 105
+			}
+			{
+				Key = 98
+				Value = 17
+			}
+			{
+				Key = 117
+				Value = 83
+			}
+			{
+				Key = 101
+				Value = 123
+			}
+			{
+				Key = 118
+				Value = 3
+			}
+			{
+				Key = 110
+				Value = 15
+			}
+			{
+				Key = 116
+				Value = 3
+			}
+			{
+				Key = 99
+				Value = 2
+			}
+			{
+				Key = 113
+				Value = 12
+			}
+			{
+				Key = 100
+				Value = 3
+			}
+		]
+	}
+	{
+		Key
+		[
+			112
+		]
+		Value
+		[
+			{
+				Key = 116
+				Value = 56
+			}
+			{
+				Key = 105
+				Value = 98
+			}
+			{
+				Key = 108
+				Value = 79
+			}
+			{
+				Key = 111
+				Value = 122
+			}
+			{
+				Key = 101
+				Value = 257
+			}
+			{
+				Key = 112
+				Value = 33
+			}
+			{
+				Key = 97
+				Value = 75
+			}
+			{
+				Key = 114
+				Value = 317
+			}
+			{
+				Key = 117
+				Value = 115
+			}
+			{
+				Key = 104
+				Value = 10
+			}
+			{
+				Key = 115
+				Value = 15
+			}
+			{
+				Key = 121
+				Value = 4
+			}
+			{
+				Key = 0
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			118
+		]
+		Value
+		[
+			{
+				Key = 117
+				Value = 36
+			}
+			{
+				Key = 101
+				Value = 137
+			}
+			{
+				Key = 111
+				Value = 69
+			}
+			{
+				Key = 97
+				Value = 33
+			}
+			{
+				Key = 105
+				Value = 130
+			}
+		]
+	}
+	{
+		Key
+		[
+			102
+		]
+		Value
+		[
+			{
+				Key = 101
+				Value = 100
+			}
+			{
+				Key = 102
+				Value = 28
+			}
+			{
+				Key = 105
+				Value = 78
+			}
+			{
+				Key = 108
+				Value = 36
+			}
+			{
+				Key = 111
+				Value = 38
+			}
+			{
+				Key = 117
+				Value = 36
+			}
+			{
+				Key = 97
+				Value = 41
+			}
+			{
+				Key = 114
+				Value = 31
+			}
+			{
+				Key = 0
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			108
+		]
+		Value
+		[
+			{
+				Key = 105
+				Value = 267
+			}
+			{
+				Key = 101
+				Value = 188
+			}
+			{
+				Key = 97
+				Value = 205
+			}
+			{
+				Key = 116
+				Value = 47
+			}
+			{
+				Key = 100
+				Value = 3
+			}
+			{
+				Key = 108
+				Value = 129
+			}
+			{
+				Key = 111
+				Value = 95
+			}
+			{
+				Key = 117
+				Value = 172
+			}
+			{
+				Key = 118
+				Value = 11
+			}
+			{
+				Key = 98
+				Value = 3
+			}
+			{
+				Key = 99
+				Value = 23
+			}
+			{
+				Key = 112
+				Value = 6
+			}
+			{
+				Key = 115
+				Value = 13
+			}
+			{
+				Key = 103
+				Value = 7
+			}
+			{
+				Key = 0
+				Value = 13
+			}
+			{
+				Key = 110
+				Value = 3
+			}
+			{
+				Key = 109
+				Value = 4
+			}
+		]
+	}
+	{
+		Key
+		[
+			104
+		]
+		Value
+		[
+			{
+				Key = 97
+				Value = 34
+			}
+			{
+				Key = 117
+				Value = 19
+			}
+			{
+				Key = 111
+				Value = 37
+			}
+			{
+				Key = 101
+				Value = 40
+			}
+			{
+				Key = 105
+				Value = 27
+			}
+			{
+				Key = 121
+				Value = 3
+			}
+			{
+				Key = 114
+				Value = 6
+			}
+		]
+	}
+	{
+		Key
+		[
+			120
+		]
+		Value
+		[
+			{
+				Key = 117
+				Value = 9
+			}
+			{
+				Key = 0
+				Value = 44
+			}
+			{
+				Key = 97
+				Value = 3
+			}
+			{
+				Key = 105
+				Value = 35
+			}
+			{
+				Key = 116
+				Value = 18
+			}
+			{
+				Key = 101
+				Value = 9
+			}
+			{
+				Key = 99
+				Value = 11
+			}
+			{
+				Key = 104
+				Value = 6
+			}
+			{
+				Key = 111
+				Value = 8
+			}
+			{
+				Key = 112
+				Value = 29
+			}
+			{
+				Key = 113
+				Value = 1
+			}
+			{
+				Key = 115
+				Value = 10
+			}
+		]
+	}
+	{
+		Key
+		[
+			121
+		]
+		Value
+		[
+			{
+				Key = 112
+				Value = 1
+			}
+			{
+				Key = 109
+				Value = 3
+			}
+			{
+				Key = 0
+				Value = 1
+			}
+			{
+				Key = 103
+				Value = 1
+			}
+			{
+				Key = 114
+				Value = 2
+			}
+			{
+				Key = 117
+				Value = 1
+			}
+			{
+				Key = 120
+				Value = 1
+			}
+			{
+				Key = 110
+				Value = 1
+			}
+		]
+	}
+	{
+		Key
+		[
+			106
+		]
+		Value
+		[
+			{
+				Key = 97
+				Value = 1
+			}
+			{
+				Key = 117
+				Value = 7
+			}
+		]
+	}
+	{
+		Key
+		[
+			119
+		]
+		Value
+		[
+			{
+				Key = 101
+				Value = 1
+			}
+		]
+	}
+]

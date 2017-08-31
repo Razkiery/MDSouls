@@ -1,0 +1,384 @@
+Part : /BASE_PART
+{
+	NameKey = "Parts/IonThruster"
+	IconNameKey = "Parts/IonThrusterIcon"
+	IDString = ion_thruster
+	EditorGroup = "FlightT2"
+	DescriptionKey = "Parts/IonThrusterDesc"
+	Cost = 800
+	TypeCategories = [thruster]
+	Size = [1, 2]
+	PhysicalRect = [0, 0, 1, 1]
+	SaveRect = &PhysicalRect
+	SelectionPriority = 1
+	SelectionTypeByRotation = true
+	SelectionTypeID = "thrusters"
+	MaxHealth = 1000
+	PenetrationResistance = 1
+	ProhibitBelow = 3
+	ThrusterForce = 100
+	FuelUsage = 50
+	AllowedDoorLocations
+	[
+		[0, -1]
+		[1, 0]
+		[0, 1]
+		[-1, 0]
+	]
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [21.33, 42.66]
+	}
+	BlueprintSprites
+	[
+		{
+			File = "blueprints.png"
+			Size = [1, 2]
+			Offset = [0, 0]
+		}
+	]
+	PowerUIStats
+	{
+		Min = .01666
+		Ideal = .0333
+	}
+	CrewUIStats
+	{
+		Min = .0625
+		Ideal = .125
+	}
+	Components
+	{
+		PowerToggle
+		{
+			Type = UIToggle
+			ToggleID = "on_off"
+			DefaultToggleValue = 1
+			RequiredForWholePartOperation = true
+			ToggledOnChoices = [1]
+		}
+
+		BatteryStorage
+		{
+			Type = AmmoConsumer
+			AmmoType = ionbattery
+			MaxAmmo = 750
+			LowConsumeJobPriority = &/TERRAN_PRIORITIES/SmallThruster_LowConsume
+			HighConsumeJobPriority = &/TERRAN_PRIORITIES/SmallThruster_HighConsume
+			EmptyConsumeJobPriority = &/TERRAN_PRIORITIES/SmallThruster_EmptyConsume
+			JobUnassignThreshold = 1000000// Effectively unassignable.
+			ResupplyThreshold = 500
+			RequiredForWholePartOperation = true
+			AmmoDesireToggle = PowerToggle
+
+			ReceiveAmmoMediaEffects = &/EFFECT_PREFABS/PowerDeliver
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, .5]
+			Floor
+			{
+				Layer = "floors"
+				Offset = [0, .5]
+				DamageLevels
+				[
+					{
+						File = "floor.png"
+						Size = [1, 2]
+					}
+					{
+						File = "floor_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "floor_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalDoodad
+			{
+				Layer = "doodads_high"
+				Offset = [0, .5]
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"doodads on1.png"
+							"doodads on2.png"
+							"doodads on3.png"
+							"doodads on4.png"
+							"doodads on5.png"
+							"doodads on6.png"
+							"doodads on7.png"
+							"doodads on8.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.1
+					}
+				]
+			}
+			NonOperationalDoodad
+			{
+				Layer = "doodads_high"
+				Offset = [0, .5]
+				DamageLevels
+				[
+					{
+						File = "doodads off.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalLighting
+			{
+				Layer = "lights_add"
+				Offset = [0, .5]
+				DamageLevels
+				[
+					{
+						File = "lights.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			Walls
+			{
+				Layer = "walls"
+				Offset = [0, .5]
+				DamageLevels
+				[
+					{
+						File = "walls.png"
+						Size = [1, 2]
+					}
+					{
+						File = "walls_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "walls_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			Roof
+			{
+				Layer = "roofs"
+				DamageLevels
+				[
+					{
+						File = "roof.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			OperationalRoofWindows
+			{
+				Layer = "roof_windows"
+				DamageLevels
+				[
+					{
+						File = "roof_windows_on.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_windows_on_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_windows_on_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+			NonOperationalRoofWindows
+			{
+				Layer = "roof_windows"
+				DamageLevels
+				[
+					{
+						File = "roof_windows_off.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_windows_off_33.png"
+						Size = [1, 1]
+					}
+					{
+						File = "roof_windows_off_66.png"
+						Size = [1, 1]
+					}
+				]
+			}
+		}
+
+		BatterySprites
+		{
+			Type = AmmoSprites
+			Location = [.5, 1]
+			AmmoStorage = BatteryStorage
+			Layer = "doodads_low"
+			HasZeroAmmoSprite = true
+			AmmoLevels
+			[
+				{
+					File = "batteries 0.png"
+					Size = [1, 2]
+				}
+				{
+					File = "batteries 1.png"
+					Size = [1, 2]
+				}
+			]
+		}
+
+		MainThruster
+		{
+			Type = Thruster
+			Location = [0.5, 1.5]// Relative to upper-left corner of unrotated part.
+			Rotation = 90d// Relative to unrotated part.
+			Force = &../../ThrusterForce
+			MinActivation = 0
+			MaxActivation = 1
+			MinUncommandedActivation = 0
+			MaxUncommandedActivation = &MaxActivation
+			FuelStorage = BatteryStorage
+			FuelUsagePerSecond = &../../FuelUsage
+		}
+
+		LateralThruster
+		{
+			Type = Thruster
+			ChainedTo = MainThruster
+			Rotation = 90d// Relative to main thruster.
+			Force = &../../ThrusterForce
+			MinActivation = -.5
+			MaxActivation = .5
+			MinUncommandedActivation = 0
+			MaxUncommandedActivation = 0
+			FuelStorage = BatteryStorage
+			FuelUsagePerSecond = &../../FuelUsage
+		}
+
+		ThrustEffects
+		{
+			Type = ContinuousEffects
+			ChainedTo = MainThruster
+			FactorMediaEffectsIntensityWith = MainThruster
+			MediaEffects
+			[
+				&/PARTICLES/SmallThrusterTrail
+				&/PARTICLES/SmallThrusterGlow
+
+				: /SOUNDS/ThrusterRumble
+				{
+					Volume = .075
+					Speed = 2
+					MaxConcurrentVolume = .15
+				}
+			]
+		}
+
+		BurstTrigger
+		{
+			Type = ThresholdTrigger
+			AmountFrom = MainThruster
+			MinAmount = .5
+		}
+
+		BurstEffects
+		{
+			Type = TriggeredEffects
+			ChainedTo = MainThruster
+			Trigger = BurstTrigger
+			FactorMediaEffectsIntensityWith = MainThruster
+			AnchorMediaEffects = true
+			MediaEffects
+			[
+				: /SOUNDS/ThrusterBurst
+				{
+					Volume = .125
+					Speed = 2
+					MaxConcurrentVolume = .25
+				}
+			]
+		}
+
+		OperationEffects
+		{
+			Type = OperationEffects
+			Location = [.5, .5]
+			BecameOperationalMediaEffects = &/EFFECT_PREFABS/MachinesOn
+			BecameNonOperationalMediaEffects = &/EFFECT_PREFABS/MachinesOff
+		}
+
+		DestroyedEffects
+		{
+			Type = DeathEffects
+			MediaEffects = &/EFFECT_PREFABS/SmallPartDestroyed
+			Location = [.5, .5]
+		}
+
+		ThrusterHum
+		{
+			Type = ContinuousEffects
+			Location = [.5, .5]
+			OnlyWhenOperational = true
+			MediaEffects
+			[
+				: /SOUNDS/ThrusterHum
+				{
+					Volume = .05
+					Speed = 1.5
+					MaxConcurrentVolume = 1
+				}
+			]
+		}
+
+		Indicators
+		{
+			Type = IndicatorSprites
+			Location = [0.5, 0.5]
+			Layer = "indicators"
+			Indicators
+			[
+				// Turned off.
+				{
+					Source = PowerToggle
+					AtlasSprite
+					{
+						File = &/INDICATORS/PowerOff
+						Size = [1, 1]
+					}
+				}
+
+				// Out of power.
+				{
+					Source = BatteryStorage
+					AtlasSprite
+					{
+						File = &/INDICATORS/NoPower
+						Size = [1, 1]
+					}
+				}
+			]
+		}
+	}
+}

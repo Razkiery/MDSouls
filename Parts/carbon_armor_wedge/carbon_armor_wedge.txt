@@ -3,7 +3,7 @@ Part : /BASE_PART
 	NameKey = "Parts/CarbonArmorWedge"
 	IconNameKey = "Parts/CarbonArmorWedgeIcon"
 	IDString = carbonarmor_wedge
-	EditorGroup = "Defenses"
+	EditorGroup = "DefensesT2"
 	DescriptionKey = "Parts/CarbonArmorWedgeDesc"
 	Cost = 250
 	Size = [1, 1]
