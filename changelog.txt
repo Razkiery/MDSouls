@@ -237,6 +237,7 @@
  |FIX| - Increased the Power Storage MaxAmmo from 11250 to vanilla (15000)
  |FIX| - Changed mod.txt version from 0.0.15 to 0.0.17 (Sharario - Forums)
  |FIX| - is not really a fix... just a logo
+ |FIX| - Added MDSouls.README.txt for some purposes like the copyright, system requirements and other things.
 			- FEATURE: Added new GUI icons for all the parts of the mod and changed by a tiers
 			- FEATURE: Overrided the entire Bounty Mode for future updates
 			- FEATURE: Overrided the entire Galaxy Map for future updates
