@@ -251,6 +251,8 @@
 			- |NEW LASER TYPE ADDED!| -
 				- Auto Turret:
 					- An automatic laser which fires to the ship with a basic AI
+			- |NEW ION WEAPON TYPE ADDED!| -
+					- Ion Cannon : Good to turn down the shields for a long time.
 			- |NEW TYPE OF ENERGY ADDED!| -
 				- Ionic energy. Better than the batterys with a plus of eficiency and power. Works only with weapons of tier 2 and propulsion of tier 1.
 			- |NEW TYPE OF REACTOR ADDED!| -
