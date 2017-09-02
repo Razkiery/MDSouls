@@ -1,0 +1,158 @@
+ID = ion_med_bullet
+Range = 120
+IdealRange = 60
+Speed = 40
+
+Components
+{
+	Physics
+	{
+		Type = CirclePhysics
+		Radius = 0.01
+		Density = 0.1
+	}
+
+	Death
+	{
+		Type = DeathByLifetime
+		// Lifetime will be auto-calculated based on range and speed.
+	}
+
+	Sprite
+	{
+		Type = AnimatedSprite
+		Animation
+		{
+			AtlasSprite
+			{
+				Texture = "med bullet.png"
+				Size = [1.5, 1.5]
+			}
+			FrameCount = 16
+			FrameSize = [128, 128]
+			FramesPerRow = 4
+			FramesPerSecond = 60
+		}
+	}
+
+	MediaEffects
+	{
+		Type = MediaEffects
+		InheritVelocityFrom = Physics
+		MediaEffects
+		[
+			&/PARTICLES/MedBulletTrail
+		]
+	}
+
+	Hit
+	{
+		Type = PenetratingHit
+		PhysicsComponent = Physics
+		Penetration = 0
+		PenetrationSpeed = 20
+
+		HitShield
+		{
+			HitEffects
+			[
+				{
+					Type = ShieldDamage
+					Damage = 1500
+				}
+				{
+					Type = Impulse;
+					Impulse = 0;
+				}
+			]
+
+			MediaEffects = &../HitOperational/MediaEffects
+		}
+		HitOperational
+		{
+			HitEffects
+			[
+				{
+					Type = PartDamage
+					Damage = 50
+				}
+				{
+					Type = Impulse;
+					Impulse = 0;
+				}
+			]
+
+			MediaEffects
+			[
+				&/PARTICLES/MedBulletHit
+				&/PARTICLES/MedBulletSmoke
+				&/PARTICLES/MedBulletFlash
+
+				: /SOUNDS/AudioExterior
+				{
+					Sound = "med_bullet_hit.wav"
+					Volume = .4
+					SpeedVariation = .4
+				}
+
+				: /SHAKES/Shake
+				{
+					ShakeAmount = .05
+					Duration = .5
+				}
+			]
+		}
+		HitStructural
+		{
+			HitEffects
+			[
+				{
+					Type = PartDamage
+					Damage = 50
+				}
+				{
+					Type = Impulse;
+					Impulse = 0;
+				}
+			]
+
+			MediaEffects
+			[
+				&/PARTICLES/MedBulletHitStruct
+
+				: /SOUNDS/AudioExterior
+				{
+					Sound = "med_bullet_hit_structure.wav"
+					Volume = .3
+					SpeedVariation = .4
+				}
+			]
+		}
+		PenetratingOperational
+		{
+			HitEffects
+			[
+				{
+					Type = PartDamage
+					Damage = 0
+				}
+				{
+					Type = PartFire
+					FireChance = .02
+				}
+			]
+
+			MediaEffects
+			[
+				&/PARTICLES/MedBulletPenetrate
+				&/PARTICLES/MedBulletFlash
+			]
+		}
+		PenetratingStructural
+		{
+			// No effect.
+		}
+		FinishedPenetratingOperational = &PenetratingOperational
+		FinishedPenetratingStructural = &PenetratingStructural
+	}
+}

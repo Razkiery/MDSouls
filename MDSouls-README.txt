@@ -1,5 +1,6 @@
 Mod for Cosmoteer made by Ryuuro.
 For cosmoteer version 0.12.X or superior.
+Version of the mod: 0.0.17
 
 Web site: https://www.cosmoteer.net/ 
 Forum: https://forum.cosmoteer.net/
@@ -27,8 +28,8 @@ This mod works for a cosmoteer version 0.12.X or superior.
 
 This mod is provided to free to use, but is Copyrighted by (Ryuuro) and his 
 intellectual property of the Author. The autor (Ryuuro) makes no claim on the
-original materials from cosmoteer. Only www.cosmoteer.net is able to host any
-of my material without my (Ryuuro) consent.
+original materials from cosmoteer. Only www.cosmoteer.net is able to host/delete/touch any
+of the material inside this mod without my (Ryuuro) consent.
 
 It may be not changed under any circumstances except for personal and private use.
 

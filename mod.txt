@@ -22,6 +22,7 @@ ShipLibraries
 Actions
 [
 //Ammo
+
 	{
 		Action = AddMany
 		AddTo = "<Ammo/ammo.txt>/Ammo"
@@ -30,7 +31,9 @@ Actions
 
 		]
 	}
+	
 //GUI
+
 	{
 		Action = Overrides
 		OverrideIn = "<Gui/editor groups.txt>"
@@ -67,11 +70,15 @@ Actions
 			&<Parts/carbon_armor_wedge/carbon_armor_wedge.txt>/Part
 			//Flight
 			&<Parts/ion_small_thruster/ion_small_thruster.txt>/Part
+			&<Parts/ion_med_thruster/ion_med_thruster.txt>/Part
+			&<Parts/ion_big_thruster/ion_big_thruster.txt>/Part
 			//Power
 			&<Parts/ion_reactor/ion_reactor.txt>/Part
 			&<Parts/ion_power_storage/ion_power_storage.txt>/Part
+			&<Parts/ion_med_cannon/ion_med_cannon.txt>/Part
 		]
 	}
+	
 //Ships From The Comunity
 
 	{//Ships From the comunity

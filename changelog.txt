@@ -236,7 +236,7 @@
  |FIX| - Deleted the changelog from the mod.txt to has his own .txt file for a better changelog.
  |FIX| - Increased the Power Storage MaxAmmo from 11250 to vanilla (15000)
  |FIX| - Changed mod.txt version from 0.0.15 to 0.0.17 (Sharario - Forums)
- |FIX| - is not really a fix... just a logo
+ |FIX| - Is not really a fix... just a logo
  |FIX| - Added MDSouls.README.txt for some purposes like the copyright, system requirements and other things.
 			- FEATURE: Added new GUI icons for all the parts of the mod and changed by a tiers
 			- FEATURE: Overrided the entire Bounty Mode for future updates
@@ -247,7 +247,7 @@
 				- Only for the Pirates: 3-6 millions ships added to appear in the Pirate sectors
 			- |NEW ARMOR TYPE ADDED!| -
 				- Carbonic armor added:
-					- 25% Better stats than the Standard armor -
+					- 25% Better stats than the Standard armor (IS STILL FLAMABLE) -
 			- |NEW LASER TYPE ADDED!| -
 				- Auto Turret:
 					- An automatic laser which fires to the ship with a basic AI
@@ -259,4 +259,6 @@
 				- Ionic Storage, a better reinforced storage which can contains the ionic cells.
 			- |NEW PROPULSION ADDED!| -
 				- Ionic Thrusters. Better than the standard one in therms of energy efficiency and propulsion power.
+				- Ionic Med. Thrusters. ^
+				- Ionic Big Thruster. ^
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

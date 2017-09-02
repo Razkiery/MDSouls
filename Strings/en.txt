@@ -33,6 +33,10 @@ Parts
 {	
 	//Weapons
 	
+	IonMedCannon = "Ion Medium Cannon"
+	IonMedCannonIcon = "Ion Med. Cannon"
+	IonMedCannonDesc = "After our scientist found the Ionized fused cells, they tried to find how to use it. As spectations, the size of the turrets is equal as the energy inside the cells."
+	
 	LargeLaser = "Large Laser"
 	LargeLaserIcon = "Lar. Laser"
 	LargeLaserDesc = "Provides a better damage than the standard one at more cost and slower fire rate."
@@ -82,6 +86,14 @@ Parts
 	IonThruster = "Ionic Thruster"
 	IonThrusterIcon = "Ion Thrust."
 	IonThrusterDesc = "A better type of propulsion than the standard one, uses Ionic solution instead of a battery"
+	
+	IonMedThruster = "Ionic Medium Thruster"
+	IonMedThrusterIcon = "Ion Medium Thrust."
+	IonMedThrusterDesc = &IonThrusterDesc
+	
+	IonBigThruster = "Ionic Big Thruster"
+	IonBigThrusterIcon = "Ion Big Thrust."
+	IonBigThrusterDesc = &IonThrusterDesc
 	
 	//Power
 	

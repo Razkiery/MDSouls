@@ -162,7 +162,7 @@ Material
 {
 	Texture
 	{
-		File = flame.png
+		File = ionflame.png
 		SampleMode = Point
 		FixTransparentColors = false
 		PreMultiplyByAlpha = false

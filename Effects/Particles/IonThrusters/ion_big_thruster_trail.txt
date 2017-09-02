@@ -1,0 +1,72 @@
+Type = Particles
+Def = &<ion_thruster_trail_def.txt>
+EmitterDef
+{
+	EmitPerSecond = 125
+	EmitPerOneShot = 0
+	PreInitializers
+	[
+		{
+			Type = SetValue
+			LocationOut = location
+			Circle
+			{
+				Center
+				{
+					X = 0
+					Y = 0
+				}
+				Radius = 0.5
+			}
+			Name = "Initial location"
+			Enabled = true
+			DataOut = location
+			ValueType = Vector2D
+			Value
+			{
+				X = 0
+				Y = 0
+			}
+			UpdateAfterInit = false
+		}
+		{
+			Type = SetRandomVelocity
+			VelocityOut = velocity
+			Speed
+			{
+				Min = 4.5
+				Max = 4.5
+			}
+			Direction
+			{
+				Min = -15d
+				Max = 15d
+			}
+			Name = "Initial velocity"
+			Enabled = true
+			UpdateAfterInit = false
+		}
+		{
+			Type = ScaleFromIntensity
+			ScaleOut = scale
+			ScaleFactor = 2
+			Name = "Scale from intensity"
+			Enabled = true
+			UpdateAfterInit = false
+		}
+	]
+	PostInitializers[]
+	UpdatedEmittedParticles = false
+}
+Bucket = Lower3
+Delay = 0
+IgnoreIntensity = false
+Sharing = Global
+MinIntensity = 0.05
+IsFancy = true
+DontEmitWhenOffScreen = true
+DontEmitWhenOffScreenSizeInflate = 10
+PenetratingBucket
+UseCustomShapeForOffScreenCheck = false
+ScaleEmissionWithIntensity = false
+MaxEmissionZoom = 3.40282347E+38
