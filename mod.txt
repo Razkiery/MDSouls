@@ -76,6 +76,7 @@ Actions
 			&<Parts/ion_reactor/ion_reactor.txt>/Part
 			&<Parts/ion_power_storage/ion_power_storage.txt>/Part
 			&<Parts/ion_med_cannon/ion_med_cannon.txt>/Part
+			//Miscelaneus
 		]
 	}
 	

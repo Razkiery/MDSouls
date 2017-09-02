@@ -1,0 +1,523 @@
+Part : /BASE_PART
+{
+	NameKey = "Parts/SmallLaser"
+	IconNameKey = "Parts/SmallLaserIcon"
+	IDString = small_laser
+	EditorGroup = "Weapons"
+	DescriptionKey = "Parts/SmallLaserDesc"
+	Cost = 2000
+	AIValue = 5
+	TypeCategories = [weapon, weapon_using_power]
+	Size = [1, 3]
+	PhysicalRect = [0, 1, 1, 2]
+	SaveRect = &PhysicalRect
+	SelectionPriority = 1
+	SelectionTypeByRotation = true
+	MaxHealth = 4000
+	PenetrationResistance = 100
+	ProhibitAbove = 1
+	AllowedDoorLocations
+	[
+		[-1, 2]
+		[1, 2]
+		[0, 3]
+	]
+	EditorIcon
+	{
+		Texture
+		{
+			File = "icon.png"
+			SampleMode = Linear
+		}
+		Size = [16, 64]
+	}
+	BlueprintSprites
+	[
+		{
+			File = "blueprints.png"
+			Size = [1, 4]
+			Offset = [0, -0.5]
+		}
+	]
+	PowerUIStats
+	{
+		Min = .666
+		Ideal = 1.333
+	}
+	CrewUIStats
+	{
+		Min = 1
+		Ideal = 2
+	}
+	Components
+	{
+		PowerToggle
+		{
+			Type = UIToggle
+			ToggleID = "on_off"
+			DefaultToggleValue = 1
+			RequiredForWholePartOperation = true
+			ToggledOnChoices = [1]
+		}
+
+		FireModeToggle
+		{
+			Type = UIToggle
+			ToggleID = "fire_mode"
+			DefaultToggleValue = 1
+			ToggledOnChoices = [1]
+		}
+
+		BatteryStorage
+		{
+			Type = AmmoConsumer
+			AmmoType = battery
+			MaxAmmo = 2000
+			LowConsumeJobPriority = &/TERRAN_PRIORITIES/SmallLaser_LowConsume
+			HighConsumeJobPriority = &/TERRAN_PRIORITIES/SmallLaser_HighConsume
+			EmptyConsumeJobPriority = &/TERRAN_PRIORITIES/SmallLaser_EmptyConsume
+			JobUnassignThreshold = 1000000// Effectively unassignable.
+			ResupplyThreshold = 500
+			RequiredForWholePartOperation = true
+			AmmoDesireToggle = PowerToggle
+
+			ReceiveAmmoMediaEffects = &/EFFECT_PREFABS/PowerDeliver
+		}
+
+		Graphics
+		{
+			Type = Graphics
+			Location = [.5, 2]
+			Floor
+			{
+				Layer = "floors"
+				DamageLevels
+				[
+					{
+						File = "floor.png"
+						Size = [1, 2]
+					}
+					{
+						File = "floor_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "floor_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalDoodad
+			{
+				Layer = "doodads_low"
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"doodads on1.png"
+							"doodads on2.png"
+							"doodads on3.png"
+							"doodads on4.png"
+							"doodads on5.png"
+							"doodads on6.png"
+							"doodads on7.png"
+							"doodads on8.png"
+						]
+						Size = [1, 3]
+						Offset = [0, -0.5]
+						AnimationInterval = 0.1
+					}
+				]
+			}
+			NonOperationalDoodad
+			{
+				Layer = "doodads_low"
+				DamageLevels
+				[
+					{
+						File = "doodads off.png"
+						Size = [1, 3]
+						Offset = [0, -0.5]
+					}
+				]
+			}
+			OperationalLighting
+			{
+				Layer = "lights_add"
+				DamageLevels
+				[
+					{
+						File = "lights.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			Walls
+			{
+				Layer = "walls"
+				DamageLevels
+				[
+					{
+						File = "walls.png"
+						Size = [1, 2]
+					}
+					{
+						File = "walls_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "walls_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			Roof
+			{
+				Layer = "roofs"
+				DamageLevels
+				[
+					{
+						File = "roof.png"
+						Size = [1, 2]
+					}
+					{
+						File = "roof_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "roof_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			OperationalRoofDoodad
+			{
+				Layer = "roof_doodads"
+				Offset = [0, -1]
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"roof_doodads_on1.png"
+							"roof_doodads_on2.png"
+							"roof_doodads_on3.png"
+							"roof_doodads_on4.png"
+							"roof_doodads_on5.png"
+							"roof_doodads_on6.png"
+							"roof_doodads_on7.png"
+							"roof_doodads_on8.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.1
+					}
+				]
+			}
+			NonOperationalRoofDoodad
+			{
+				Layer = "roof_doodads"
+				Offset = [0, -1]
+				DamageLevels
+				[
+					{
+						File = "roof_doodads_off.png"
+						Size = [1, 2]
+						AnimationInterval = 0.1
+					}
+				]
+			}
+			OperationalRoofWindows
+			{
+				Layer = "roof_windows"
+				DamageLevels
+				[
+					{
+						File = "roof_windows_on.png"
+						Size = [1, 2]
+					}
+					{
+						File = "roof_windows_on_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "roof_windows_on_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			NonOperationalRoofWindows
+			{
+				Layer = "roof_windows"
+				DamageLevels
+				[
+					{
+						File = "roof_windows_off.png"
+						Size = [1, 2]
+					}
+					{
+						File = "roof_windows_off_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "roof_windows_off_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+		}
+
+		Turret
+		{
+			Type = TurretWeapon
+			Location = [.5, 0.46]// Relative to upper-left corner of unrotated part.
+			Rotation = -90d// Relative to unrotated part.
+			FireInterval = .75
+			FireDelay = .4
+			FiringArc = 200d
+			RotateSpeed = 90d
+			FireThresholdAngle = 1d
+			SpawnLoc = [1.0, 0]
+			AmmoStorage = BatteryStorage
+			AmmoUsed = 200
+			TargetSearchTriesPerFrame = 1
+			AIFirepowerRating = 400
+			FireModeToggle = FireModeToggle
+
+			Emitter
+			{
+				Type = Bullet
+				Bullet = &<small_laser_shot.txt>
+			}
+
+			CoverageSectorArc
+			{
+				Texture = &/INDICATORS/Falloff
+				VertexColor = [255, 255, 255, 51]
+				QuadCount = 64
+			}
+		}
+
+		FireEffect
+		{
+			Type = TriggeredEffects
+			ChainedTo = Turret
+			Location = [1.1, 0]
+			AnchorMediaEffects = true
+
+			MediaEffects
+			[
+				: /PARTICLES/SmallLaserShoot
+				{
+					Delay = .353
+				}
+
+				: /SOUNDS/AudioExterior
+				{
+					Sound = "small_laser_charge.wav"
+					Volume = .6
+				}
+
+				: /SOUNDS/AudioExterior
+				{
+					Sound = "small_laser_fire.wav"
+					Volume = .6
+					Delay = .353
+					SpeedVariation = .25
+				}
+			]
+		}
+
+		CrewLocation
+		{
+			Type = CrewLocation
+			Location = [.5, 2.35]
+			Rotation = 180d
+		}
+		PartCrew
+		{
+			Type = PartCrew
+			MinCrew = 1
+			FirstCrewJobPriority = &/TERRAN_PRIORITIES/SmallLaser_FirstCrew
+			AdditionalCrewJobPriority = &/TERRAN_PRIORITIES/SmallLaser_AdditionalCrew
+			FullCrewJobPriority = &/TERRAN_PRIORITIES/SmallLaser_FullCrew
+			PrerequisitesBeforeCrewing = [BatteryStorage, PowerToggle]
+			CrewDestinations
+			[
+				&../../CrewLocation/Location
+			]
+			CrewLocations
+			[
+				CrewLocation
+			]
+		}
+
+		TurretCollider
+		{
+			Type = CircleCollider
+			ChainedTo = Turret
+			Radius = .45
+			Density = .75
+		}
+
+		TurretGraphics
+		{
+			Type = Graphics
+			ChainedTo = Turret
+			Location = [.5, 0]
+			Rotation = 90d
+			OperationalDoodad
+			{
+				Layer = "doodads_high"
+				DamageLevels
+				[
+					{
+						AnimationFiles
+						[
+							"turret doodads on1.png"
+							"turret doodads on2.png"
+							"turret doodads on3.png"
+							"turret doodads on4.png"
+							"turret doodads on5.png"
+							"turret doodads on6.png"
+							"turret doodads on7.png"
+							"turret doodads on8.png"
+						]
+						Size = [1, 2]
+						AnimationInterval = 0.1
+					}
+				]
+			}
+			NonOperationalDoodad
+			{
+				Layer = "doodads_high"
+				DamageLevels
+				[
+					{
+						File = "turret doodads off.png"
+						Size = [1, 2]
+					}
+				]
+			}
+			Walls
+			{
+				Layer = "walls"
+				DamageLevels
+				[
+					{
+						// None.
+					}
+					{
+						File = "turret damage_33.png"
+						Size = [1, 2]
+					}
+					{
+						File = "turret damage_66.png"
+						Size = [1, 2]
+					}
+				]
+			}
+		}
+
+		WeaponSprite
+		{
+			Type = Sprite
+			ChainedTo = Turret
+			Location = [.5, 0]
+			Rotation = 90d
+			Layer = "weapons"
+			ResetAnimationTrigger = Turret
+			AtlasSprite
+			{
+				AnimationFiles
+				[
+					"weapon2.png"
+					"weapon3.png"
+					"weapon4.png"
+					"weapon5.png"
+					"weapon6.png"
+					"weapon7.png"
+					"weapon8.png"
+					"weapon1.png"// Loop back to beginning and clamp there.
+				]
+				Size = [1, 2]
+				AnimationInterval = 0.08
+				AnimationStartTime = MinValue
+				ClampAnimation = true
+			}
+		}
+
+		BatterySprites
+		{
+			Type = AmmoSprites
+			Location = [.5, 2]
+			AmmoStorage = BatteryStorage
+			Layer = "doodads_high"
+			AmmoLevels
+			[
+				{
+					File = "batteries1.png"
+					Size = [1, 2]
+				}
+				{
+					File = "batteries2.png"
+					Size = [1, 2]
+				}
+			]
+		}
+
+		OperationEffects
+		{
+			Type = OperationEffects
+			Location = [.5, 1.5]
+			BecameOperationalMediaEffects = &/EFFECT_PREFABS/PowerOn
+			BecameNonOperationalMediaEffects = &/EFFECT_PREFABS/PowerOff
+		}
+
+		DestroyedEffects
+		{
+			Type = DeathEffects
+			MediaEffects = &/EFFECT_PREFABS/MedPartDestroyed
+			Location = [.5, 1.5]
+		}
+
+		Indicators
+		{
+			Type = IndicatorSprites
+			Location = [.5, 1.5]
+			Layer = "indicators"
+			Indicators
+			[
+				// Turned off.
+				{
+					Source = PowerToggle
+					AtlasSprite
+					{
+						File = &/INDICATORS/PowerOff
+						Size = [1, 1]
+					}
+				}
+
+				// Out of power.
+				{
+					Source = BatteryStorage
+					AtlasSprite
+					{
+						File = &/INDICATORS/NoPower
+						Size = [1, 1]
+					}
+				}
+
+				// No crew.
+				{
+					Source = PartCrew
+					AtlasSprite
+					{
+						File = &/INDICATORS/NoCrew
+						Size = [1, 1]
+					}
+				}
+			]
+		}
+	}
+}

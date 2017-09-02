@@ -30,7 +30,7 @@ EditorGroups
 }
 
 Parts
-{	
+{		
 	//Weapons
 	
 	IonMedCannon = "Ion Medium Cannon"

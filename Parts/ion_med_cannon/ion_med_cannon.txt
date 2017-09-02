@@ -241,7 +241,7 @@ Part : /BASE_PART
 			Emitter
 			{
 				Type = Bullet
-				Bullet = &<med_bullet.txt>
+				Bullet = &<ion_med_bullet.txt>
 			}
 
 			CoverageSectorArc
@@ -261,11 +261,17 @@ Part : /BASE_PART
 			MediaEffects
 			[
 				&/PARTICLES/MedCannonShoot
-				&/PARTICLES/MedCannonSmoke
 
 				: /SOUNDS/AudioExterior
 				{
 					Sound = "med_cannon_fire.wav"
+					Volume = .75
+					SpeedVariation = .25
+				}
+				
+				: /SOUNDS/AudioExterior
+				{
+					Sound = "emp_recharge.wav"
 					Volume = .75
 					SpeedVariation = .25
 				}
@@ -427,8 +433,9 @@ Part : /BASE_PART
 			AmmoLevels
 			[
 				{
-					File = "bullets1.png"
+					File = "bulletsloaded1.png"
 					Size = [2, 2]
+					Location = [.5, 0]
 				}
 			]
 		}
