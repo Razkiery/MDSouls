@@ -1,12 +1,12 @@
 Part : /BASE_PART
 {
-	NameKey = "Parts/SmallLaser"
-	IconNameKey = "Parts/SmallLaserIcon"
-	IDString = small_laser
-	EditorGroup = "Weapons"
-	DescriptionKey = "Parts/SmallLaserDesc"
-	Cost = 2000
-	AIValue = 5
+	NameKey = "Parts/ReactiveBeam"
+	IconNameKey = "Parts/ReactiveBeamIcon"
+	IDString = reactive_beam
+	EditorGroup = "WeaponsT2"
+	DescriptionKey = "Parts/ReactiveBeamDesc"
+	Cost = 2500
+	AIValue = 15
 	TypeCategories = [weapon, weapon_using_power]
 	Size = [1, 3]
 	PhysicalRect = [0, 1, 1, 2]
@@ -14,7 +14,7 @@ Part : /BASE_PART
 	SelectionPriority = 1
 	SelectionTypeByRotation = true
 	MaxHealth = 4000
-	PenetrationResistance = 100
+	PenetrationResistance = 75
 	ProhibitAbove = 1
 	AllowedDoorLocations
 	[
@@ -267,42 +267,192 @@ Part : /BASE_PART
 			}
 		}
 
-		Turret
+		Weapon
 		{
 			Type = TurretWeapon
 			Location = [.5, 0.46]// Relative to upper-left corner of unrotated part.
 			Rotation = -90d// Relative to unrotated part.
-			FireInterval = .75
-			FireDelay = .4
+			FireInterval = 0.1
+			FireDelay = 0
 			FiringArc = 200d
-			RotateSpeed = 90d
+			RotateSpeed = 85d
 			FireThresholdAngle = 1d
-			SpawnLoc = [1.0, 0]
+			SpawnLoc = [0.5, 0]
 			AmmoStorage = BatteryStorage
-			AmmoUsed = 200
+			AmmoUsed = 100
 			TargetSearchTriesPerFrame = 1
 			AIFirepowerRating = 400
 			FireModeToggle = FireModeToggle
 
 			Emitter
 			{
-				Type = Bullet
-				Bullet = &<small_laser_shot.txt>
-			}
+				Type = Beam
+				Range = 150
+				IdealRange = 130
+				Duration = .5
+				HitInterval = .1
 
-			CoverageSectorArc
-			{
-				Texture = &/INDICATORS/Falloff
-				VertexColor = [255, 255, 255, 51]
-				QuadCount = 64
+				BeamMediaEffects
+				[
+					{
+						Type = Beam
+						BeamSprite
+						{
+							Texture = "beam_base.png"
+							_baseColor = [255, 255, 255, 255]
+							Shader = "beam.shader"
+							_sizePulseFactor = 1.2
+							_sizePulseInterval = .1
+							_sizePulseUOffsetFactor = -.03
+							Size = [0.8, 0]// Only width matters.
+							VertexColor = [255, 255, 255, 217]
+						}
+						FadeInTime = .25
+						FadeOutTime = .25
+						ArcSpriteSegments = 64
+						Bucket = Middle1
+					}
+
+					&/PARTICLES/IonBeamEmitSparks
+
+					: /SOUNDS/AudioExterior
+					{
+						Sound = "Large_laser_charge.wav"
+						Volume = 1
+						MaxConcurrent = 1
+						MaxConcurrentVolume = 1
+						IntensityRampUpTime = .25
+						IntensityRampDownTime = .25
+					}
+
+					: /SOUNDS/AudioExterior
+					{
+						Sound = "Large_laser_fire.wav"
+						Volume = 1
+						MaxConcurrent = 1
+						MaxConcurrentVolume = 1
+						IntensityRampUpTime = .25
+						IntensityRampDownTime = .25
+
+						DynamicVolume : ^/0/DynamicVolume
+						{
+							UseCustomShapeForDistance = true
+						}
+						DynamicFilter : ^/0/DynamicFilter
+						{
+							UseCustomShapeForDistance = true
+						}
+					}
+				]
+
+				HitShield
+				{
+					HitEffects
+					[
+						{
+							Type = ShieldDamage;
+							Damage = 0;
+						}
+						
+						{
+							Type = Impulse;
+							Impulse = 0;
+						}
+						
+					]
+
+					MediaEffects = &../HitOperational/MediaEffects;
+				}
+				
+				HitOperational
+				{
+					HitEffects
+					[
+						{
+							Type = PartDamage;
+							Damage = 0;
+						}
+						{
+							Type = Impulse;
+							Impulse = 0;
+						}
+					]
+
+					MediaEffects
+					[
+						&/PARTICLES/IonBeamHit
+						&/PARTICLES/IonBeamHitFlash
+						&/PARTICLES/IonBeamHitSparks
+
+						: /SOUNDS/AudioExterior
+						{
+							Sound = "Large_laser_hit.wav"
+							Volume = .5
+							MaxConcurrent = 1
+							MaxConcurrentVolume = 1
+							IntensityRampUpTime = .25
+							IntensityRampDownTime = .25
+						}
+
+						: /SHAKES/Shake
+						{
+							ShakeAmount = .05
+							Duration = .5
+						}
+					]
+				}
+
+				HitStructural
+				{
+					HitEffects
+					[
+						{
+							Type = PartDamage;
+							Damage = 0;
+						}
+						{
+							Type = Impulse;
+							Impulse = 0;
+						}
+					]
+
+					MediaEffects
+					[
+						&/PARTICLES/IonBeamHitStruct
+
+						: /SOUNDS/AudioExterior
+						{
+							Sound = "Large_laser_hit.wav"
+							Volume = .25
+							MaxConcurrent = 1
+							MaxConcurrentVolume = .5
+							IntensityRampUpTime = .25
+							IntensityRampDownTime = .25
+						}
+
+						: /SHAKES/Shake
+						{
+							ShakeAmount = .025
+							Duration = .5
+						}
+					]
+				}
+
+				CoverageSectorArc
+				{
+					Texture = &/INDICATORS/Falloff
+					VertexColor = [255, 255, 255, 51]
+					QuadCount = 64
+				}
+			
 			}
 		}
-
+		
 		FireEffect
 		{
 			Type = TriggeredEffects
-			ChainedTo = Turret
-			Location = [1.1, 0]
+			ChainedTo = Weapon
+			Location = [1.4, -0.020]
 			AnchorMediaEffects = true
 
 			MediaEffects
@@ -314,13 +464,13 @@ Part : /BASE_PART
 
 				: /SOUNDS/AudioExterior
 				{
-					Sound = "small_laser_charge.wav"
+					Sound = "large_laser_charge.wav"
 					Volume = .6
 				}
 
 				: /SOUNDS/AudioExterior
 				{
-					Sound = "small_laser_fire.wav"
+					Sound = "large_laser_fire.wav"
 					Volume = .6
 					Delay = .353
 					SpeedVariation = .25
@@ -334,6 +484,7 @@ Part : /BASE_PART
 			Location = [.5, 2.35]
 			Rotation = 180d
 		}
+		
 		PartCrew
 		{
 			Type = PartCrew
@@ -355,7 +506,7 @@ Part : /BASE_PART
 		TurretCollider
 		{
 			Type = CircleCollider
-			ChainedTo = Turret
+			ChainedTo = Weapon
 			Radius = .45
 			Density = .75
 		}
@@ -363,7 +514,7 @@ Part : /BASE_PART
 		TurretGraphics
 		{
 			Type = Graphics
-			ChainedTo = Turret
+			ChainedTo = Weapon
 			Location = [.5, 0]
 			Rotation = 90d
 			OperationalDoodad
@@ -422,11 +573,11 @@ Part : /BASE_PART
 		WeaponSprite
 		{
 			Type = Sprite
-			ChainedTo = Turret
+			ChainedTo = Weapon
 			Location = [.5, 0]
 			Rotation = 90d
 			Layer = "weapons"
-			ResetAnimationTrigger = Turret
+			ResetAnimationTrigger = Weapon
 			AtlasSprite
 			{
 				AnimationFiles
@@ -519,5 +670,6 @@ Part : /BASE_PART
 				}
 			]
 		}
-	}
+		
+		}
 }

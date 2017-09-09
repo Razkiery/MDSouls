@@ -58,6 +58,8 @@ Actions
 			//Weapons
 			&<Parts/large_laser/large_laser.txt>/Part
 			&<Parts/auto_turret/auto_turret.txt>/Part
+			&<Parts/reactive_beam/reactive_beam.txt>/Part
+			//&<Parts/single_turret/single_turret.txt>/Part
 			//Miscelaneus
 			&<Parts/fast_conveyor/fast_conveyor.txt>/Part
 			&<Parts/faster_conveyor/faster_conveyor.txt>/Part
