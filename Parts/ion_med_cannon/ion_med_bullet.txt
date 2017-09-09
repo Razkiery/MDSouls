@@ -25,12 +25,12 @@ Components
 		{
 			AtlasSprite
 			{
-				Texture = "med bullet.png"
-				Size = [1.5, 1.5]
+				Texture = "med_laser.png"
+				Size = [3, 3]
 			}
-			FrameCount = 16
+			FrameCount = 1
 			FrameSize = [128, 128]
-			FramesPerRow = 4
+			FramesPerRow = 1
 			FramesPerSecond = 60
 		}
 	}
@@ -41,7 +41,7 @@ Components
 		InheritVelocityFrom = Physics
 		MediaEffects
 		[
-			&/PARTICLES/MedBulletTrail
+			&/PARTICLES/IonMedBulletTrail
 		]
 	}
 
@@ -84,9 +84,8 @@ Components
 
 			MediaEffects
 			[
-				&/PARTICLES/MedBulletHit
-				&/PARTICLES/MedBulletSmoke
-				&/PARTICLES/MedBulletFlash
+				&/PARTICLES/IonMedBulletHit
+				&/PARTICLES/IonMedBulletFlash
 
 				: /SOUNDS/AudioExterior
 				{
@@ -118,7 +117,7 @@ Components
 
 			MediaEffects
 			[
-				&/PARTICLES/MedBulletHitStruct
+				&/PARTICLES/IonMedBulletHitStruct
 
 				: /SOUNDS/AudioExterior
 				{
@@ -144,8 +143,8 @@ Components
 
 			MediaEffects
 			[
-				&/PARTICLES/MedBulletPenetrate
-				&/PARTICLES/MedBulletFlash
+				&/PARTICLES/IonMedBulletPenetrate
+				&/PARTICLES/IonMedBulletFlash
 			]
 		}
 		PenetratingStructural

@@ -1,12 +1,35 @@
 //Weapons Shot
-AutoTurretShot  = &<../Effects/Particles/AutoTurret/auto_shot.txt>
+
+	//Auto Turret Shot
+AutoTurretShot = &<../Effects/Particles/AutoTurret/auto_shot.txt>
+
+	//Ion med cannon
+IonMedCannonShot = &<../Effects/Particles/IonCannon/ion_med_cannon_shoot.txt>
+IonMedCannonSmoke = &<../Effects/Particles/IonCannon/ion_med_cannon_smoke.txt>
+IonMedBulletTrail = &<../Effects/Particles/IonCannon/ion_med_bullet_trail.txt>
+IonMedBulletHit = &<../Effects/Particles/IonCannon/ion_med_bullet_hit.txt>
+IonMedBulletHitStruct = &<../Effects/Particles/IonCannon/ion_med_bullet_hit_struct.txt>
+IonMedBulletPenetrate = &<../Effects/Particles/IonCannon/ion_med_bullet_penetrate.txt>
+IonMedBulletSmoke = &<../Effects/Particles/IonCannon/ion_med_bullet_smoke.txt>
+IonMedBulletFlash = &<../Effects/Particles/IonCannon/ion_med_bullet_flash.txt>
 
 //Thruster Trails
+
+	//Small Thrusters
 IonSmallThrusterTrail = &<../Effects/Particles/IonThrusters/ion_small_thruster_trail.txt>
+
+	//Medium Thrusters
 IonMedThrusterTrail = &<../Effects/Particles/IonThrusters/ion_med_thruster_trail.txt>
+
+	//Big Thrusters
 IonBigThrusterTrail = &<../Effects/Particles/IonThrusters/ion_big_thruster_trail.txt>
 
 //Thrusters Glow
+	//Small Thrusters
 IonSmallThrusterGlow = &<../Effects/Particles/IonThrusters/ion_small_thruster_glow.txt>
+
+	//Medium Thrusters
 IonMedThrusterGlow = &<../Effects/Particles/IonThrusters/ion_med_thruster_glow.txt>
+
+	//Big Thrusters
 IonBigThrusterGlow = &<../Effects/Particles/IonThrusters/ion_big_thruster_glow.txt>

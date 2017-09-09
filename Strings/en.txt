@@ -32,6 +32,9 @@ EditorGroups
 Parts
 {		
 	//Weapons
+	ReactiveBeam = "Reactive Beam"
+	ReactiveBeamIcon = "Reac. Beam"
+	ReactiveBeamDesc  = "Reactive beam made by Ionized plasma cells"
 	
 	IonMedCannon = "Ion Medium Cannon"
 	IonMedCannonIcon = "Ion Med. Cannon"

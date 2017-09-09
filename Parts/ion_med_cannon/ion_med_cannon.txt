@@ -260,7 +260,6 @@ Part : /BASE_PART
 
 			MediaEffects
 			[
-				&/PARTICLES/MedCannonShoot
 
 				: /SOUNDS/AudioExterior
 				{
@@ -269,13 +268,6 @@ Part : /BASE_PART
 					SpeedVariation = .25
 				}
 				
-				: /SOUNDS/AudioExterior
-				{
-					Sound = "emp_recharge.wav"
-					Volume = .75
-					SpeedVariation = .25
-				}
-
 				: /SHAKES/Shake
 				{
 					ShakeAmount = .025

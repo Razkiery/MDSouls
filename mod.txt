@@ -1,4 +1,5 @@
 Name = "MD Souls"
+CompatibleGameVersions = ["0.12.11_rc1"]
 Version = 0.0.17
 Author = "Ryuuro"
 logo = "logo.png"
@@ -42,6 +43,48 @@ Actions
 
 //Effects Added
 
+<<<<<<< HEAD
+		{
+			Action = Overrides
+			OverrideIn = "<Effects/particles.txt>"
+			Overrides = &<Effects/particles.txt>
+		}
+		
+	//Parts Added
+
+		{
+			Action = AddMany
+			AddTo = "<Ships/Terran/terran.txt>/Terran/Parts"
+			ManyToAdd
+			[
+				//Weapons
+				&<Parts/large_laser/large_laser.txt>/Part
+				&<Parts/auto_turret/auto_turret.txt>/Part
+				&<Parts/reactive_beam/reactive_beam.txt>/Part
+				//&<Parts/single_turret/single_turret.txt>/Part
+				//Miscelaneus
+				&<Parts/fast_conveyor/fast_conveyor.txt>/Part
+				&<Parts/faster_conveyor/faster_conveyor.txt>/Part
+				//Armor
+				&<Parts/carbon_armor/carbon_armor.txt>/Part
+				&<Parts/carbon_armor_tri/carbon_armor_tri.txt>/Part
+				&<Parts/carbon_armor2/carbon_armor2.txt>/Part
+				&<Parts/carbon_armor2_wedge/carbon_armor2_wedge_L.txt>/Part
+				&<Parts/carbon_armor2_wedge/carbon_armor2_wedge_R.txt>/Part
+				&<Parts/carbon_armor_wedge/carbon_armor_wedge.txt>/Part
+				//Flight
+				&<Parts/ion_small_thruster/ion_small_thruster.txt>/Part
+				&<Parts/ion_med_thruster/ion_med_thruster.txt>/Part
+				&<Parts/ion_big_thruster/ion_big_thruster.txt>/Part
+				//Power
+				&<Parts/ion_reactor/ion_reactor.txt>/Part
+				&<Parts/ion_power_storage/ion_power_storage.txt>/Part
+				&<Parts/ion_med_cannon/ion_med_cannon.txt>/Part
+				//Miscelaneus
+			]
+		}
+		
+=======
 	{
 		Action = Overrides
 		OverrideIn = "<Effects/particles.txt>"
@@ -58,6 +101,8 @@ Actions
 			//Weapons
 			&<Parts/large_laser/large_laser.txt>/Part
 			&<Parts/auto_turret/auto_turret.txt>/Part
+			&<Parts/reactive_beam/reactive_beam.txt>/Part
+			//&<Parts/single_turret/single_turret.txt>/Part
 			//Miscelaneus
 			&<Parts/fast_conveyor/fast_conveyor.txt>/Part
 			&<Parts/faster_conveyor/faster_conveyor.txt>/Part
@@ -80,6 +125,7 @@ Actions
 		]
 	}
 	
+>>>>>>> 2e756a73f33ec87469e92481845f455c94a44e5d
 //Ships From The Comunity
 
 	{//Ships From the comunity
